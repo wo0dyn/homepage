@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Nicolas Dubois <me@nicolasdubois.com> -- Web Developer -- @duboisnicolas
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3

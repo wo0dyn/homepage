@@ -5,6 +5,6 @@ I'm wo0dy•n, a Web Developer (Python/Django), former student in Cognitive Scie
 and father of two.
 
 I code in **python** (w/ **Django** framework).
-I work in **eCommerce** for 8 years.
+I have been working in **eCommerce** for 8 years.
 
 Copyright © 2014-2015 Nicolas Dubois, wo0dyn

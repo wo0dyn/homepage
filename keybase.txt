@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/wo0dyn
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://nicolasdubois.com
+  * I am wo0dyn (https://keybase.io/wo0dyn) on keybase.
+  * I have a public key with fingerprint 8801 6947 1D6E D70D 1C3C  9DE5 3F33 D53B 1F8D CF50
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101da5b46cad16e0cc958e553b41ef3de5fff5f44fbc245515f5d0e3aa9742cc0b40a",
+            "fingerprint": "880169471d6ed70d1c3c9de53f33d53b1f8dcf50",
+            "host": "keybase.io",
+            "key_id": "3f33d53b1f8dcf50",
+            "kid": "0101da5b46cad16e0cc958e553b41ef3de5fff5f44fbc245515f5d0e3aa9742cc0b40a",
+            "uid": "18a9e5af7a22c237e921bf1827f10719",
+            "username": "wo0dyn"
+        },
+        "service": {
+            "hostname": "nicolasdubois.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1470684107,
+    "expire_in": 157680000,
+    "prev": "c937f40f5db4d865a14124eda0229a8e1102a1d926e3b58f06291050d48f1879",
+    "seqno": 15,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.55
+Comment: https://keybase.io/crypto
+
+yMIpAnicrZJbSBVBGMfPyUtmRFZgiODDRg+Fxczuzl5OFoXVQw8ZPSilcZjdmfWM
+enaPZ1ft5KUIi6ikCLs+ZFFUZBc0iAKzMutBEaQoijAp6SJUIGEdqUPNir312LwM
+833//2/+3zD989IC2cHRyOxDuZORt8HBh2fqAmVXXg82CoZDEkKoUaim0xutIdT1
+wtWMCCEBQAAJRoasmJhAhQLT1JFGEZIMGVJLIhRZloUsWbYMU5QRgshCBFAJY12V
+RdMEhgywUChYzK6k8Vic2R7HahqAii6rkCiUqIBAUzJ1zpIsSSKcDS2NmBYC3Bhx
+XN/BwxnYpSuZw2v8EJ6O9w/9f85dN42DGtYpwpaKRdEUJZXqIjQsqImqBYEKdV/o
+0riNo5SrGxxAErbQXCjwWj0zqf+s/hwzfZuZTg12SZ3hMHel6US5PRZ3PIeXeTvi
+ebGQ7/YSsWkcNcIzoLDBbMJfkhvqadxlji2EIFeaHvPJUFaBosk8UqFAd8ZYnIaZ
+r0CqogG+/GtoPUeauqRaMuAjGzLRFIShDEWZEgxEUccahRCIGBJdVKhkIM0CiqhD
+gACRNT616s/r0lrb8dk8J67kTJdV2tiri1Ohue9BRXogmB3IzJjlf7FA9pycvx8v
+E2cF9pSUrNJeDbS825Uav//0+9LWpSvOZBf0nt3efqpKCt4b+hksuuzeGVi75Veo
+vvPxI/hrc9OPiv5roZ6GdbUZB7uO/r7d1l02ap4+1tS1j6ZHp+KJ1Odz+e0HYqxc
+qhiLsdJv5QVPPoXpyMfx4htffnSk9XzIXX81HT07sWFZidw8kfG+JbmhtLx7b1Z3
+cWjHrCMjLzf1nTzRu71lLJVk7QfnT21qT7UOHFjePzRwfsHwlbv5cOHZ/ZObd88F
+XtXz4baONzc7z+exRVtZMnHx+PUiciEtvGRNz7bk8kit4d7pVfK+vjg8ta2gYjhn
+cW6s8mhudGLsVnTj7kslD1ZndGT2C38AKapIYA==
+=dnfr
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wo0dyn
+
+==================================================================

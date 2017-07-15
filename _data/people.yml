@@ -1,0 +1,23 @@
+me:
+  fullname: Nicolas Dubois
+  nickname: "@wo0dyn"
+  title: Full Stack Developer
+  email: me@nicolasdubois.com
+  website: https://nicolasdubois.com
+  gravatar: https://secure.gravatar.com/avatar/51c17cde62e1bb52812ea5352723a5ed
+
+  social:
+    - name: Twitter
+      url: https://twitter.com/wo0dyn
+    - name: GitHub
+      url: https://github.com/wo0dyn
+    - name: Google+
+      url: https://www.google.com/+NicolasDubois-Wo0dyn
+    - name: Keybase
+      url: https://keybase.io/wo0dyn
+    - name: Django People
+      url: https://people.djangoproject.com/wo0dyn/
+    - name: LinkedIn
+      url: https://linkedin.com/in/wo0dyn
+    - name: CodePen
+      url: https://codepen.io/wo0dyn

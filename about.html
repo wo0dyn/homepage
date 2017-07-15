@@ -1,0 +1,46 @@
+---
+layout: default
+title: About
+permalink: about.html
+---
+
+{% assign my = site.data.people["me"] %}
+
+<section>
+    <h3>About Me</h3>
+    <p>I'm Nicolas Dubois, <abbr title="also known as">aka</abbr> {{ my.nickname }}.<br>
+       I'm a <strong>Full Stack Developer</strong>, <strong>Guitar Player</strong> and
+       <strong>Father</strong> of two.<br>
+       I code in <a href="https://www.python.org">Python</a>
+       (with <a href="https://www.djangoproject.com">Django</a> web framework).
+    <p>I work for an awesome company called <a href="http://www.people-doc.com">PeopleDoc</a>.<br>
+       I worked for few companies such as <a href="https://www.oscaro.com">Oscaro</a>,
+       <a href="https://www.villatech.fr" title="Formerly Discounteo.com">Villatech</a>/<a href="http://www.pulsat.fr/">Pulsat</a>,
+       <a href="http://www.labsoft.fr/">LabSoft</a>.<br>
+       I worked in science laboratories: <a href="http://www.loria.fr">Loria</a>,
+       <a href="http://www-irisa.univ-ubs.fr/" title="Formerly Valoria">IRISA</a> and
+       <a href="http://www.liglab.fr" title="Formely Leibniz IMAG">LIG</a>.
+    <p>→ You can find
+       <a href="https://github.com/wo0dyn/resume" title="resume repository">my résumé on my GitHub account</a>
+
+    <h3>Colophon</h3>
+    <p>This website is powered by <a href="https://jekyllrb.com">Jekyll</a> and
+       <a href="https://pages.github.com">GitHub pages</a>.<br>
+       It has been developped using a <a href="https://support.apple.com/kb/sp670">MacBook Air</a>
+       (13-inch, Mid 2012), with <a href="https://www.sublimetext.com/3">Sublime Text 3</a> editor.
+    <p>The <a href="https://www.w3.org/TR/html5">HTML</a> markup of this website is
+       <em>willingly</em> lax.<br>
+       I've also used <a href="http://sass-lang.com/">Sass</a> to style this website.<br>
+    <p>→ You can find the
+       <a href="https://github.com/wo0dyn/homepage" title="homepage repository">source code on my GitHub account</a>.
+</section>
+
+<aside>
+    <h3>Social links</h3>
+    <p>You can follow me on several social media:
+        <ul>
+            {% for medium in my.social %}
+                <li><a href="{{ medium.url }}">{{ medium.name }}</a>
+            {% endfor %}
+        </ul>
+</aside>

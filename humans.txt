@@ -1,9 +1,15 @@
+---
+permalink: /humans.txt
+---
+
 # humanstxt.org/
 # The humans responsible & technology colophon
 
 # TEAM
 
-    Nicolas Dubois <me@nicolasdubois.com> -- Web Developer -- @duboisnicolas
+    {% assign my = site.data.people["me"] %}
+    {{ my.fullname }} <{{ my.email }}> -- {{ my.title }} -- {{ my.nickname }}
+
 
 # TECHNOLOGY COLOPHON
 

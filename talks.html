@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: talks.html
+title: Talks
+description: I'm wo0dyn, a Full Stack Developer (Python/Django), former student in Cognitive Sciences, Guitar Player and Father of two.
+---
+
+<p>I had the opportunity to give some talks in few conferences.
+
+<div class="hero" style="background-image: url(assets/images/wo0dyn-at-djangocong-2015.jpg);"></div>
+
+{% assign talks_by_year = site.data.talks | group_by_exp: "talk", "talk.datetime | date: '%Y'" %}
+
+{% for year in talks_by_year %}
+    <h2>{{ year.name }}</h2>
+
+    {% for talk in year.items %}
+        <article>
+            <h1>
+                {{ talk.title }}
+                {% if talk.original_title %}
+                    <span>
+                        Original title: <em lang="{{ talk.lang }}">{{ talk.original_title }}</em>
+                    </span>
+                {% endif %}
+            </h1>
+            Talk given on
+            <time datetime="{{ talk.datetime }}">{{ talk.datetime|date: "%a, %b %d" }}</time>
+            at {{ talk.conference }}, {{ talk.place }}.
+            <p>{{ talk.description }}</p>
+        </article>
+    {% endfor %}
+{% endfor %}

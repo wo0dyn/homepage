@@ -1,0 +1,6 @@
+safe: true
+permalink: pretty
+highlighter: rouge
+
+sass:
+  style: compressed

@@ -2,33 +2,19 @@
 layout: default
 permalink: /
 title: Home
-description: I'm wo0dyn, a Full Stack Developer (Python/Django), former student in Cognitive Sciences, Guitar Player and Father of two.
+twitter:
+  image: assets/images/wo0dyn-portrait.jpg
 ---
 
 {% assign my = site.data.people["me"] %}
 
-<section>
-    <img src="{{ my.gravatar|append: "?s=100" }}" alt="{{ my.fullname }} (avatar)" class="gravatar">
-    <p>Hi, my name is <strong>{{ my.fullname }}</strong> — {{ my.nickname }}.<br>
-       I'm a <strong>Full Stack Developer/Guitar Player/Father</strong>.<br>
-       I code in <strong>Python</strong> (with <strong>Django</strong> web framework).
-</section>
-
-<aside>
-    {% if site.data.talks %}
-        <h3>Latest talks</h3>
-            <ul>
-            {% for talk in site.data.talks limit: 3 %}
-                <li>{{ talk.title }}
-            {% endfor %}
-            </ul>
-    {% endif %}
-    {% if site.data.music %}
-        <h3>Latest uploaded music</h3>
-            <ul>
-            {% for track in site.data.music limit: 3 %}
-                <li>{{ track.title }}
-            {% endfor %}
-            </ul>
-    {% endif %}
-</aside>
+  <div class="jumbotron">
+    <img src="assets/images/wo0dyn-portrait.jpg" alt="{{ my.fullname }} (avatar)">
+    <hgroup>
+      <h1>👋 Hi, I'm {{ my.fullname }}.</h1>
+      <h2>
+        I'm a {{ my.title }}, Guitar Player, Father&nbsp;of&nbsp;2.<br>
+        I live in {{ my.location }}.
+      </h2>
+    </hgroup>
+  </div>

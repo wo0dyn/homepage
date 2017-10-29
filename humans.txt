@@ -1,16 +1,18 @@
 ---
 permalink: /humans.txt
 ---
-
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
-
+/* TEAM */
     {% assign my = site.data.people["me"] %}
-    {{ my.fullname }} <{{ my.email }}> -- {{ my.title }} -- {{ my.nickname }}
+    {{ my.title }}: {{ my.fullname }}
+    Contact: {{ my.email }}
+    Twitter: @{{ my.nickname }}
+    From: {{ my.location }}
 
 
-# TECHNOLOGY COLOPHON
+/* SITE */
 
-    HTML5, CSS3
+    Language: English / Français
+    Standards: HTML5, CSS3

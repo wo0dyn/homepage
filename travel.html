@@ -1,0 +1,34 @@
+---
+layout: default
+title: Travel
+permalink: travel.html
+---
+
+{% assign my = site.data.people["me"] %}
+
+  <section>
+    <h2>Travel</h2>
+
+    {%- for image in site.static_files %}
+    {%- if image.path contains 'images/travel' %}
+      <img src="{{ image.path }}" class="thumbnail">
+    {%- endif %}
+    {%- endfor %}
+  </section>
+
+  <aside>
+    <h3>✈️ Airports</h3>
+    <p>I've visited few airports during my trips:
+    <ul>
+    {%- for airport in site.data.travels['airports'] %}
+      <li>{{ airport }}
+    {%- endfor %}
+    </ul>
+
+    <h3>Airlines</h3>
+    <ul>
+    {%- for airline in site.data.travels['airlines'] %}
+      <li><a href="{{ airline['href'] }}">{{ airline['name'] }}</a>
+    {%- endfor %}
+    </ul>
+  </aside>

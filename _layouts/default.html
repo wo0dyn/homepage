@@ -1,47 +1,60 @@
-<!doctype html>{% assign my = site.data.people["me"] %}
+{% assign my = site.data.people["me"] -%}
+
+{%- capture page_title %}{{ my.fullname }} • {{ page.title }}{% endcapture -%}
+{%- assign page_description = page.description -%}
+{%- assign page_image_url = page.twitter.image|absolute_url|default: my.gravatar -%}
+{%- assign page_url = page.url | absolute_url -%}
+
+<!doctype html>
 <html lang="{{ page.lang|default: "en-us" }}">
 <meta charset="utf-8">
-<title>{{ my.fullname }} • {{ page.title }}</title>
-<meta name="description" content="{{ page.description }}">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_description }}">
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:creator" content="{{ my.nickname }}">
-<meta name="twitter:image" content="{{ my.gravatar }}">
-<meta property="og:url" content="{{ my.website }}">
-<meta property="og:title" content="{{ page.title }}">
-<meta property="og:description" content="{{ page.description }}">
-<meta property="og:image" content="{{ my.gravatar }}">
+<meta name="twitter:card" content="{{ page.twitter.card | default: "summary" }}">
+<meta name="twitter:site" content="@{{ my.nickname }}">
+<meta name="twitter:creator" content="@{{ my.nickname }}">
+<meta name="twitter:image" content="{{ page_image_url }}">
+{%- if page.twitter.player %}
+<meta name="twitter:player" content="{{ page.twitter.player }}">
+{%- endif %}
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_description }}">
+<meta property="og:image" content="{{ page_image_url }}">
 
 <link rel="author" href="{% link humans.txt %}" type="text/plain">
 <link rel="canonical" href="{{ my.website }}">
-<link rel="publisher" href="https://plus.google.com/+NicolasDubois-Wo0dyn">
-<link rel="shortcut icon" href="{{ my.gravatar|append: "?s=16" }}" type="image/png">
-<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lora:400,700" type="text/css">
-<link rel="stylesheet" href="/css/core.css" type="text/css">
+<link rel="shortcut icon" href="{{ my.gravatar | append: "?s=16" }}" type="image/png">
+<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lora:400,700|Ubuntu+Mono" type="text/css">
+<link rel="stylesheet" href="/assets/css/core.css" type="text/css">
 
 <header>
-    <h1>Nicolas Dubois › {{ page.title }}</h1>
-    <nav>
-        <ul>
-            <li><a href="{% link home.html %}">Home</a>
-            <li><a href="{% link talks.html %}">Talks</a>
-            <li><a href="{% link about.html %}">About</a>
-        </ul>
-    </nav>
+  <h1>{{ my.nickname }}</h1>
+  <nav>
+    <ul>
+      <li{% if page.name contains 'home' %} class="active"{% endif %}><a href="{% link home.html %}">Home</a>
+      <li{% if page.url contains 'posts' %} class="active"{% endif %}><a href="{% link posts.html %}">Posts</a>
+      <li{% if page.name contains 'talks' %} class="active"{% endif %}><a href="{% link talks.html %}">Talks</a>
+      <li{% if page.name contains 'music' %} class="active"{% endif %}><a href="{% link music.html %}">Music</a>
+      <li{% if page.name contains 'travel' %} class="active"{% endif %}><a href="{% link travel.html %}">Travel</a>
+      <li{% if page.name contains 'about' %} class="active"{% endif %}><a href="{% link about.html %}">About</a>
+    </ul>
+  </nav>
 </header>
 
-<main class="{{ page.title | slugify }}">
-    {{ content }}
+<main class="{{ page.layout }} {{ page.title | slugify }}">
+  {{ content | strip }}
 </main>
 
 <footer>
-    <p>© 2014-{{ 'today'|date:"%Y" }} {{ my.fullname }} • {{ my.nickname }} on
-    <a href="https://twitter.com/wo0dyn">Twitter</a>,
-    <a href="https://github.com/wo0dyn">GitHub</a> and
-    <a href="https://linkedin.com/in/wo0dyn">LinkedIn</a>.
+  <p>© 2002-{{ 'now' | date:"%Y" }} {{ my.fullname }} • {{ my.nickname }} on
+  <a href="https://github.com/wo0dyn">GitHub</a>,
+  <a href="https://linkedin.com/in/wo0dyn">LinkedIn</a> and
+  <a href="https://twitter.com/wo0dyn">Twitter</a>.
 </footer>
 
 <script type="text/javascript">
-    if (("nicolasdubois.com" == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
+if (("nicolasdubois.com" == window.location.host) && (window.location.protocol != "https:"))
+  window.location.protocol = "https";
 </script>

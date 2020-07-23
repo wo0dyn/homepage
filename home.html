@@ -7,28 +7,30 @@ description: I'm wo0dyn, a Full Stack Developer (Python/Django), former student 
 
 {% assign my = site.data.people["me"] %}
 
-<section>
-    <img src="{{ my.gravatar|append: "?s=100" }}" alt="{{ my.fullname }} (avatar)" class="gravatar">
-    <p>Hi, my name is <strong>{{ my.fullname }}</strong> — {{ my.nickname }}.<br>
-       I'm a <strong>Full Stack Developer/Guitar Player/Father</strong>.<br>
-       I code in <strong>Python</strong> (with <strong>Django</strong> web framework).
-</section>
+  <section>
+    <img src="{{ my.gravatar | append: "?s=100" }}" alt="{{ my.fullname }} (avatar)" class="gravatar">
+    <p>
+      Hi, my name is <strong>{{ my.fullname }}</strong> — {{ my.nickname }}.<br>
+      I'm a <strong>{{ my.title }}</strong>, <strong>Guitar Player</strong> and <strong>Father</strong> of 2
+      based in {{ my.location }}.<br>
+      I code in <strong>Python</strong> (with <strong>Django</strong> web framework).
+  </section>
 
-<aside>
+  <aside>
     {% if site.data.talks %}
-        <h3>Latest talks</h3>
-            <ul>
-            {% for talk in site.data.talks limit: 3 %}
-                <li>{{ talk.title }}
-            {% endfor %}
-            </ul>
+      <h3>Latest talks</h3>
+        <ul>
+        {% for talk in site.data.talks limit: 3 %}
+          <li>{{ talk.title }}
+        {% endfor %}
+        </ul>
     {% endif %}
     {% if site.data.music %}
-        <h3>Latest uploaded music</h3>
-            <ul>
-            {% for track in site.data.music limit: 3 %}
-                <li>{{ track.title }}
-            {% endfor %}
-            </ul>
+      <h3>Latest uploaded music</h3>
+        <ul>
+        {% for track in site.data.music limit: 3 %}
+          <li>{{ track.title }}
+        {% endfor %}
+        </ul>
     {% endif %}
-</aside>
+  </aside>

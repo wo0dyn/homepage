@@ -1,6 +1,7 @@
 <!doctype html>{% assign my = site.data.people["me"] %}
 <html lang="{{ page.lang|default: "en-us" }}">
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ my.fullname }} • {{ page.title }}</title>
 <meta name="description" content="{{ page.description }}">
 
@@ -8,11 +9,11 @@
 <meta name="twitter:creator" content="{{ my.nickname }}">
 <meta name="twitter:image" content="{{ my.gravatar }}">
 <meta property="og:url" content="{{ my.website }}">
-<meta property="og:title" content="{{ page.title }}">
+<meta property="og:title" content="wo0dyn › {{ page.title }}">
 <meta property="og:description" content="{{ page.description }}">
 <meta property="og:image" content="{{ my.gravatar }}">
 
-<link rel="author" href="{% link humans.txt %}" type="text/plain">
+<link rel="author" href="{% link humans.txt %}">
 <link rel="canonical" href="{{ my.website }}">
 <link rel="publisher" href="https://plus.google.com/+NicolasDubois-Wo0dyn">
 <link rel="shortcut icon" href="{{ my.gravatar|append: "?s=16" }}" type="image/png">
@@ -20,28 +21,30 @@
 <link rel="stylesheet" href="/css/core.css" type="text/css">
 
 <header>
-    <h1>Nicolas Dubois › {{ page.title }}</h1>
-    <nav>
-        <ul>
-            <li><a href="{% link home.html %}">Home</a>
-            <li><a href="{% link talks.html %}">Talks</a>
-            <li><a href="{% link about.html %}">About</a>
-        </ul>
-    </nav>
+  <h1>Nicolas Dubois › {{ page.title }}</h1>
+  <nav>
+    <ul>
+      <li><a href="{% link home.html %}">Home</a>
+      <li><a href="{% link talks.html %}">Talks</a>
+      <li><a href="{% link about.html %}">About</a>
+    </ul>
+  </nav>
 </header>
 
 <main class="{{ page.title | slugify }}">
-    {{ content }}
+  {{ content|strip }}
 </main>
 
 <footer>
-    <p>© 2014-{{ 'today'|date:"%Y" }} {{ my.fullname }} • {{ my.nickname }} on
-    <a href="https://twitter.com/wo0dyn">Twitter</a>,
-    <a href="https://github.com/wo0dyn">GitHub</a> and
-    <a href="https://linkedin.com/in/wo0dyn">LinkedIn</a>.
+  <p>© 2014-{{ 'today'|date:"%Y" }} {{ my.fullname }} • {{ my.nickname }} on
+    <a href="https://github.com/wo0dyn">GitHub</a>,
+    <a href="https://linkedin.com/in/wo0dyn">LinkedIn</a>, and
+    <a href="https://twitter.com/wo0dyn">Twitter</a>.
 </footer>
 
-<script type="text/javascript">
-    if (("nicolasdubois.com" == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
+{% comment %}
+<script>
+  if (("nicolasdubois.com" == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
 </script>
+{% endcomment %}

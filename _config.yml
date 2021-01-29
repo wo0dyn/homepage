@@ -4,12 +4,8 @@ highlighter: rouge
 
 exclude:
   - CNAME
-  - Gemfile
-  - Gemfile.lock
   - README.rst
-  - math.py
   - homepage.sublime-project
-  - vendor
 
 sass:
   style: compressed
@@ -17,6 +13,3 @@ sass:
 collections:
   talks:
     output: true
-
-# host: 0.0.0.0
-# port: 5000

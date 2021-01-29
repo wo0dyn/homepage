@@ -1,0 +1,33 @@
+---
+layout: default
+title: Music
+permalink: music.html
+twitter:
+  card: player
+  player: https://www.youtube.com/embed/1NO4N--isHA
+---
+
+{% for track in site.data.music %}
+  <article>
+    <h2>{{ track.title }}</h2>
+    <section>
+      {%- if track.published_on == 'youtube' %}
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/{{ track.key }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      {%- endif %}
+    </section>
+  </article>
+{%- endfor %}
+
+  <aside>
+  {%- for image in site.static_files %}
+  {%- if image.path contains 'images/music' %}
+    <figure>
+      <img src="{{ image.path }}" class="music">
+    </figure>
+  {%- endif %}
+  {%- endfor %}
+  </aside>

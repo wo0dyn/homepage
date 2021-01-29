@@ -1,6 +1,15 @@
 safe: true
-permalink: pretty
+permalink: /posts/:categories/:year/:title:output_ext
 highlighter: rouge
+
+exclude:
+  - CNAME
+  - README.rst
+  - homepage.sublime-project
 
 sass:
   style: compressed
+
+collections:
+  talks:
+    output: true

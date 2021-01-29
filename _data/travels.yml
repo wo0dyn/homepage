@@ -1,0 +1,37 @@
+airports:
+  - Amsterdam Airport Schiphol, Netherlands (AMS)
+  - Brussels Airport, Belgium (BRU)
+  - Copenhagen Airport, Denmark (CPH)
+  - Edinburgh Airport, Scotland, UK (EDI)
+  - Faro Airport, Portugal (FAO)
+  - Geneva Airport, Switzerland (GVA)
+  - Heraklion International Airport, Greece (HER)
+  - Lille Airport, France (LIL)
+  - Lisbon Portela Airport, Portugal (LIS)
+  - Lyon–Saint-Exupéry Airport, France (LYS)
+  - Marseille Provence Airport, France (MRS)
+  - Metz–Nancy–Lorraine Airport, France (ETZ)
+  - Miami International Airport, Florida, USA (MIA)
+  - Nice Côte d'Azur International Airport, France (NCE)
+  - Oujda Angads Airport, Morocco (OUD)
+  - Paris Orly Airport, France (ORY)
+  - Paris Roissy–Charles de Gaulle Airport, France (CDG)
+  - Strasbourg Airport, France (SXB)
+  - Toulouse–Blagnac Airport, France (TLS)
+  - Václav Havel Airport Prague, Czechia (PRG)
+
+airlines:
+  - name: AIRFRANCE
+    href: https://www.airfrance.com
+  - name: Brussels Airlines
+    href: https://www.brusselsairlines.com
+  - name: easyJet
+    href: https://www.easyjet.com
+  - name: HOP!
+    href: https://www.hop.fr
+  - name: KLM
+    href: https://www.klm.com
+  - name: Ryanair
+    href: https://www.ryanair.com
+  - name: TAP Air Portugal
+    href: https://www.flytap.com

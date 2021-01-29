@@ -1,22 +1,35 @@
 ---
 layout: default
-title: About
+title: About wo0dyn
 permalink: about.html
+archives:
+  - datetime: 2018-08-27T15:44:13Z
+    website: https://nicolasdubois.com/
+  - datetime: 2016-10-21T15:02:07Z
+    website: https://nicolasdubois.com/
+  - datetime: 2009-11-28T14:52:21Z
+    website: http://nico.dubs-family.com:80/home
+  - datetime: 2006-11-23T02:25:22Z
+    website: http://duboisnicolas.free.fr/cv/personal.php
+  - datetime: 2002-02-14T11:54:46Z
+    website: http://duboisnicolas.free.fr:80/
+
 ---
 
 {% assign my = site.data.people["me"] %}
 
-<section>
+  <section>
     <h3>About Me</h3>
-    <p>I'm Nicolas Dubois, <abbr title="also known as">aka</abbr> {{ my.nickname }}.<br>
-       I'm a <strong>Full Stack Developer</strong>, <strong>Guitar Player</strong> and
-       <strong>Father</strong> of two.<br>
-       I code in <a href="https://www.python.org">Python</a>
-       (with <a href="https://www.djangoproject.com">Django</a> web framework).
-    <p>I work for an awesome company called <a href="http://www.people-doc.com">PeopleDoc</a>.<br>
+    <p>I'm {{ my.fullname }}, <abbr title="also known as">aka</abbr> {{ my.nickname }}.<br>
+       I'm a <strong>{{ my.title }}</strong>, <strong>Guitar Player</strong> and
+       <strong>Father</strong> of 2.<br>
+       I live in {{ my.location }}.
+    <p>I work for a company called <a href="http://www.people-doc.com">PeopleDoc</a>
+       by <a href="https://www.ultimatesoftware.com">Ultimate Software</a>.<br>
+
        I worked for few companies such as <a href="https://www.oscaro.com">Oscaro</a>,
-       <a href="https://www.villatech.fr" title="Formerly Discounteo.com">Villatech</a>/<a href="http://www.pulsat.fr/">Pulsat</a>,
-       <a href="http://www.labsoft.fr/">LabSoft</a>.<br>
+       <a href="https://www.villatech.fr" title="Formerly Discounteo.com">Villatech</a>/<a href="http://www.pulsat.fr/">Pulsat</a>.<br>
+
        I worked in science laboratories: <a href="http://www.loria.fr">Loria</a>,
        <a href="http://www-irisa.univ-ubs.fr/" title="Formerly Valoria">IRISA</a> and
        <a href="http://www.liglab.fr" title="Formely Leibniz IMAG">LIG</a>.
@@ -28,19 +41,35 @@ permalink: about.html
        <a href="https://pages.github.com">GitHub pages</a>.<br>
        It has been developped using a <a href="https://support.apple.com/kb/sp670">MacBook Air</a>
        (13-inch, Mid 2012), with <a href="https://www.sublimetext.com/3">Sublime Text 3</a> editor.
-    <p>The <a href="https://www.w3.org/TR/html5">HTML</a> markup of this website is
+    <p>The <a href="https://html.spec.whatwg.org">HTML</a> markup of this website is
        <em>willingly</em> lax.<br>
-       I've also used <a href="http://sass-lang.com/">Sass</a> to style this website.<br>
+       I've also used <a href="http://sass-lang.com">Sass</a> to style this website.<br>
     <p>→ You can find the
-       <a href="https://github.com/wo0dyn/homepage" title="homepage repository">source code on my GitHub account</a>.
-</section>
+       <a href="https://github.com/wo0dyn/homepage" title="Homepage repository">source code on my GitHub account</a>.
 
-<aside>
+    <h3>Archives</h3>
+    <p>Thanks to <a href="http://web.archive.org">Wayback Machine</a> from
+      the <a href="http://archive.org">Internet Archive</a>, here are some
+      snapshots of my homepage over the last decade:
+      <ul>
+        {%- for archive in page.archives -%}
+        {% assign ts = archive['datetime'] | date: "%Y%m%d%H%M%S" %}
+        <li>
+          <a href="http://web.archive.org/web/{{ ts }}/{{ archive['website'] }}">
+            <time datetime="{{ archive['datetime'] | date_to_xmlschema }}">
+              {{- archive['datetime'] | date_to_long_string: "ordinal", "US" -}}
+            </time>
+          </a>
+        {%- endfor %}
+      </ul>
+  </section>
+
+  <aside>
     <h3>Social links</h3>
     <p>You can follow me on several social media:
-        <ul>
-            {% for medium in my.social %}
-                <li><a href="{{ medium.url }}">{{ medium.name }}</a>
-            {% endfor %}
-        </ul>
-</aside>
+      <ul>
+      {%- for medium in my.social %}
+        <li><a href="{{ medium.url }}">{{ medium.name }}</a>
+      {%- endfor %}
+      </ul>
+  </aside>

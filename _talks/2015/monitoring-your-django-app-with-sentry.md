@@ -8,4 +8,4 @@ place: Clermont-Ferrand, France
 lang: fr
 ---
 
-Presentation of Sentry (how to install + usage with Django)
+Presentation of Sentry (how to install + use with Django)

@@ -8,7 +8,7 @@ place: Toulon, France
 lang: fr
 ---
 
-Sharing few (not really serious) thoughts about how to make python better, by using unicode operators.
+Sharing a few (not really serious) thoughts about how to make python better, by using unicode operators.
 
 
 ## Unicode operators

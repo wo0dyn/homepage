@@ -21,16 +21,16 @@ archives:
   <section>
     <h3>About Me</h3>
     <p>I'm {{ my.fullname }}, <abbr title="also known as">aka</abbr> {{ my.nickname }}.<br>
-       I'm a <strong>{{ my.title }}</strong>, <strong>Guitar Player</strong> and
-       <strong>Father</strong> of 2.<br>
+       I'm a <strong>{{ my.title }}</strong>, <strong>guitar player</strong> and
+       <strong>father</strong>&nbsp;of&nbsp;two.<br>
        I live in {{ my.location }}.
-    <p>I work for a company called <a href="http://www.people-doc.com">PeopleDoc</a>
-       by <a href="https://www.ultimatesoftware.com">Ultimate Software</a>.<br>
+    <p>I work for a company called "<a href="http://www.people-doc.com">PeopleDoc</a>
+       by <a href="https://www.ultimatesoftware.com">Ultimate Software</a>".<br>
 
-       I worked for few companies such as <a href="https://www.oscaro.com">Oscaro</a>,
+       I previously worked for a few companies such as <a href="https://www.oscaro.com">Oscaro</a>,
        <a href="https://www.villatech.fr" title="Formerly Discounteo.com">Villatech</a>/<a href="http://www.pulsat.fr/">Pulsat</a>.<br>
 
-       I worked in science laboratories: <a href="http://www.loria.fr">Loria</a>,
+       I have also worked in the following science labs: <a href="http://www.loria.fr">Loria</a>,
        <a href="http://www-irisa.univ-ubs.fr/" title="Formerly Valoria">IRISA</a> and
        <a href="http://www.liglab.fr" title="Formely Leibniz IMAG">LIG</a>.
     <p>→ You can find
@@ -66,7 +66,7 @@ archives:
 
   <aside>
     <h3>Social links</h3>
-    <p>You can follow me on several social media:
+    <p>You can follow me on social media:
       <ul>
       {%- for medium in my.social %}
         <li><a href="{{ medium.url }}">{{ medium.name }}</a>

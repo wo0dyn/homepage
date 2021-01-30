@@ -8,4 +8,4 @@ place: Clermont-Ferrand, France
 lang: fr
 ---
 
-Quick presentation of Invoke to run tasks, instead of using Makefile.
+Quick presentation of using Invoke to run tasks, instead of using a Makefile.

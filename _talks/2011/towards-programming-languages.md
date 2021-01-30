@@ -8,4 +8,4 @@ place: Nîmes, France
 lang: fr
 ---
 
-I was wondering, in the talk, if “programming language” should be translated into « langue de programmation » instead of « langage de programmation ».
+I wondered, in the talk, if “programming language” should be translated into « langue de programmation » instead of « langage de programmation ».

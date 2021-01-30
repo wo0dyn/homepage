@@ -8,6 +8,6 @@ place: Lille, France
 lang: fr
 ---
 
-This presentation will show why it is important to have a clean history on your project, by taking small examples and a more substantial use case, on a Django project. 
+This presentation described why it is important to keep your project's Git history clean, illustrated by small examples before being applied to a more substantial Django project.
 
-Leads mentioned are obviously applicable in any other versioned project, regardless of the versioning system chosen anyway.
+All of the tips mentioned in this talk also apply to other versioned project, regardless of versioning system.

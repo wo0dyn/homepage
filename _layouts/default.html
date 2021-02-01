@@ -30,7 +30,11 @@
 <link rel="stylesheet" href="/assets/css/core.css" type="text/css">
 
 <header>
-  <h1>{{ my.nickname }}</h1>
+  <h1>
+    <a href="{% link home.html %}">
+      {{- my.nickname -}}
+    </a>
+  </h1>
   <nav>
     <ul>
       <li{% if page.name contains 'home' %} class="active"{% endif %}><a href="{% link home.html %}">Home</a>

@@ -17,39 +17,43 @@ twitter:
 ---
 
 {% assign twitter = "<a href='https://twitter.com/nickname'>@nickname</a>" %}
-
-<p>I have had the opportunity to give talks at a few conferences, mainly about
-   <strong>Python</strong>, <strong>Django</strong> and general software development.
-
-<aside>
-  {% for photo in page.photos %}
-    <figure>
-      <img src="assets/images/talks/{{ photo['src'] }}" alt="{{ photo['alt'] }}">
-      <figcaption>{{ photo['alt'] }} • Credits&nbsp;{{ twitter | replace: 'nickname', photo['nickname'] }}</figcaption>
-    </figure>
-  {% endfor %}</aside>
-
 {% assign talks_by_year = site.talks | group_by_exp: "talk", "talk.date | date: '%Y'" | reverse %}
 
-{% for year in talks_by_year %}
   <section>
-    <h2>{{ year.name }}</h2>
+    <h2>Talks</h2>
+    <p>I have had the opportunity to give talks at a few conferences, mainly about
+       <strong>Python</strong>, <strong>Django</strong> and general software development.
 
-    {% for talk in year.items %}
-      <article>
-        <h1>
-          {{ talk.title }}
-          {% if talk.original_title %}
-            <span>
-              Original title: <em lang="{{ talk.lang }}">{{ talk.original_title }}</em>
-            </span>
-          {% endif %}
-        </h1>
-        Talk given on
-        <time datetime="{{ talk.date }}">{{ talk.date | date: "%a, %b %d" }}</time>
-        at {{ talk.conference }}, {{ talk.place }}.
-        {{ talk.excerpt | replace: "</p>", "" }}
-      </article>
+    {% for year in talks_by_year %}
+        <h3>{{ year.name }}</h3>
+
+        {% for talk in year.items %}
+          <article>
+            <h1>
+              {{ talk.title }}
+              {% if talk.original_title %}
+                <span>
+                  Original title: <em lang="{{ talk.lang }}">{{ talk.original_title }}</em>
+                </span>
+              {% endif %}
+            </h1>
+            Talk given on
+            <time datetime="{{ talk.date }}">{{ talk.date | date: "%a, %b %d" }}</time>
+            at {{ talk.conference }}, {{ talk.place }}.
+            {{ talk.excerpt | replace: "</p>", "" }}
+          </article>
+        {% endfor %}
     {% endfor %}
   </section>
-{% endfor %}
+
+  <aside>
+    <h3>📷 Photos</h3>
+    {% for photo in page.photos %}
+      <figure>
+        <img src="assets/images/talks/{{ photo['src'] }}" alt="{{ photo['alt'] }}">
+        <figcaption>{{ photo['alt'] }} • Credits&nbsp;{{ twitter | replace: 'nickname', photo['nickname'] }}</figcaption>
+      </figure>
+    {% endfor %}
+  </aside>
+
+

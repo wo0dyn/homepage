@@ -19,7 +19,7 @@ archives:
 {% assign my = site.data.people["me"] %}
 
   <section>
-    <h3>About Me</h3>
+    <h2>About Me</h2>
     <p>I'm {{ my.fullname }}, <abbr title="also known as">aka</abbr> {{ my.nickname }}.<br>
        I'm a <strong>{{ my.title }}</strong>, <strong>guitar player</strong> and
        <strong>father</strong>&nbsp;of&nbsp;two.<br>
@@ -36,18 +36,20 @@ archives:
     <p>→ You can find
        <a href="https://github.com/wo0dyn/resume" title="resume repository">my résumé on my GitHub account</a>
 
-    <h3>Colophon</h3>
+    <h2>Colophon</h2>
     <p>This website is powered by <a href="https://jekyllrb.com">Jekyll</a> and
        <a href="https://pages.github.com">GitHub pages</a>.<br>
        It has been developped using a <a href="https://support.apple.com/kb/sp670">MacBook Air</a>
        (13-inch, Mid 2012), with <a href="https://www.sublimetext.com/3">Sublime Text 3</a> editor.
     <p>The <a href="https://html.spec.whatwg.org">HTML</a> markup of this website is
        <em>willingly</em> lax.<br>
-       I've also used <a href="http://sass-lang.com">Sass</a> to style this website.<br>
+       I've also used <a href="http://sass-lang.com">Sass</a> to style this website.
+    <p>Thanks <a href="https://ojh.github.io/">@ojh</a> for the
+      language tweaks.
     <p>→ You can find the
        <a href="https://github.com/wo0dyn/homepage" title="Homepage repository">source code on my GitHub account</a>.
 
-    <h3>Archives</h3>
+    <h2>Archives</h2>
     <p>Thanks to <a href="http://web.archive.org">Wayback Machine</a> from
       the <a href="http://archive.org">Internet Archive</a>, here are some
       snapshots of my homepage over the last decade:
@@ -65,11 +67,15 @@ archives:
   </section>
 
   <aside>
-    <h3>Social links</h3>
+    <h3>🌍 Social links</h3>
     <p>You can follow me on social media:
       <ul>
       {%- for medium in my.social %}
         <li><a href="{{ medium.url }}">{{ medium.name }}</a>
       {%- endfor %}
       </ul>
+
+    <h3>📬 Contact</h3>
+    <p>You can send me an email to
+      <a href="mailto:{{ my.email }}">{{ my.email }}</a>.
   </aside>

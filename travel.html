@@ -20,15 +20,8 @@ permalink: travel.html
     <h3>✈️ Airports</h3>
     <p>I've visited a few airports during my travels:
     <ul>
-    {%- for airport in site.data.travels['airports'] %}
+    {%- for airport in site.data.travel['airports'] %}
       <li>{{ airport }}
-    {%- endfor %}
-    </ul>
-
-    <h3>Airlines</h3>
-    <ul>
-    {%- for airline in site.data.travels['airlines'] %}
-      <li><a href="{{ airline['href'] }}">{{ airline['name'] }}</a>
     {%- endfor %}
     </ul>
   </aside>

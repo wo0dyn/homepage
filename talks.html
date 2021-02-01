@@ -5,13 +5,13 @@ title: Talks
 photos:
   - src: djangocong-2018.jpg
     alt: Djangocong, Lille, 2018
-    nickname: providenz
+    author: providenz
   - src: djangocong-2015.jpg
     alt: Djangocong, Clermont-Ferrand, 2015
-    nickname: couac
+    author: couac
   - src: sudweb-2011.jpg
     alt: Sudweb, Nîmes, 2011
-    nickname: n1k0
+    author: n1k0
 twitter:
   image: assets/images/talks/djangocong-2018.jpg
 ---
@@ -47,11 +47,10 @@ twitter:
   </section>
 
   <aside>
-    <h3>📷 Photos</h3>
     {% for photo in page.photos %}
       <figure>
         <img src="assets/images/talks/{{ photo['src'] }}" alt="{{ photo['alt'] }}">
-        <figcaption>{{ photo['alt'] }} • Credits&nbsp;{{ twitter | replace: 'nickname', photo['nickname'] }}</figcaption>
+        <figcaption>{{ photo['alt'] }} • Credits&nbsp;{{ twitter | replace: 'nickname', photo['author'] }}</figcaption>
       </figure>
     {% endfor %}
   </aside>

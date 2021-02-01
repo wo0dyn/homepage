@@ -30,11 +30,11 @@ twitter:
   </section>
 
   <aside>
-    <h3>📷 Photos</h3>
   {%- for image in site.static_files %}
   {%- if image.path contains 'images/music' %}
     <figure>
       <img src="{{ image.path }}" class="music">
+      <figcaption>Credits&nbsp;<a href="https://www.instagram.com/thrashyone/">@thrashyone</a></figcaption>
     </figure>
   {%- endif %}
   {%- endfor %}

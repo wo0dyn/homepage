@@ -111,12 +111,12 @@ main {
     font-size: 1.4em;
   }
 
-  &.talks {
+  &.talks, &.music {
     aside figure {
       margin-bottom: 2em;
 
       img {
-        width: 80%;
+        width: 100%;
       }
     }
   }
@@ -189,12 +189,6 @@ main {
     object-fit: cover;
     width: 200px;
     height: 200px;
-  }
-
-  img.music {
-    object-fit: cover;
-    width: 300px;
-    // height: 200px;
   }
 
   .jumbotron {

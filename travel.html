@@ -1,19 +1,28 @@
 ---
-layout: default
 title: Travel
 permalink: travel.html
+description: >
+  Some pictures from my various travels in Venice&nbsp;🇮🇹,
+  Miami&nbsp;🇺🇸, Copenhagen&nbsp;🇩🇰… and also my current town
+  Cahors&nbsp;🇫🇷.
 ---
 
-{% assign my = site.data.people["me"] %}
+  {% assign my = site.data.people["me"] %}
 
   <section>
     <h2>Travel</h2>
 
+    <p class=lead>{{ page.description | strip }}
+
+    <div>
     {%- for image in site.static_files %}
     {%- if image.path contains 'images/travel' %}
-      <img src="{{ image.path }}" class="thumbnail">
+      <a data-fslightbox href="{{ image.path }}">
+        <img src="{{ image.path }}" class=thumbnail>
+      </a>
     {%- endif %}
     {%- endfor %}
+    </div>
   </section>
 
   <aside>

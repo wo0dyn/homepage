@@ -1,7 +1,8 @@
 ---
-layout: default
 title: Music
 permalink: music.html
+description: >
+  Yet another guitarist publishing solo guitar videos on YouTube.
 twitter:
   card: player
   player: https://www.youtube.com/embed/1NO4N--isHA
@@ -9,31 +10,27 @@ twitter:
 
   <section>
     <h2>Music</h2>
-    <p>Yet another guitarist publishing solo guitar videos
-      on YouTube.
+    <p class=lead>{{ page.description | strip }}
 
-    {% for track in site.data.music %}
+    {%- for track in site.data.music %}
     <article>
       <h2>{{ track.title }}</h2>
-      <section>
-        {%- if track.published_on == 'youtube' %}
-        <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/{{ track.key }}"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        {%- endif %}
-      </section>
+      <a data-fslightbox=html5-youtube-videos
+        href="https://www.youtube.com/watch?v={{ track.key }}">
+        <img class=track src="{{ "assets/images/music/" | append: track.key | append: '.jpg' }}"
+          alt="{{ track.title }}">
+      </a>
     </article>
     {%- endfor %}
-
   </section>
 
   <aside>
   {%- for image in site.static_files %}
-  {%- if image.path contains 'images/music' %}
+  {%- if image.path contains 'images/music/studio' %}
     <figure>
-      <img src="{{ image.path }}" class="music">
+      <a data-fslightbox href="{{ image.path }}">
+        <img src="{{ image.path }}" class=music>
+      </a>
       <figcaption>Credits&nbsp;<a href="https://www.instagram.com/thrashyone/">@thrashyone</a></figcaption>
     </figure>
   {%- endif %}

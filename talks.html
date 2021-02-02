@@ -1,7 +1,9 @@
 ---
-layout: default
-permalink: talks.html
 title: Talks
+permalink: talks.html
+description: >
+  I have had the opportunity to give talks at a few conferences, mainly about
+  <strong>Python</strong>, <strong>Django</strong> and general software development.
 photos:
   - src: djangocong-2018.jpg
     alt: Djangocong, Lille, 2018
@@ -16,13 +18,12 @@ twitter:
   image: assets/images/talks/djangocong-2018.jpg
 ---
 
-{% assign twitter = "<a href='https://twitter.com/nickname'>@nickname</a>" %}
-{% assign talks_by_year = site.talks | group_by_exp: "talk", "talk.date | date: '%Y'" | reverse %}
+  {% assign twitter = "<a href='https://twitter.com/nickname'>@nickname</a>" %}
+  {% assign talks_by_year = site.talks | group_by_exp: "talk", "talk.date | date: '%Y'" | reverse %}
 
   <section>
     <h2>Talks</h2>
-    <p>I have had the opportunity to give talks at a few conferences, mainly about
-       <strong>Python</strong>, <strong>Django</strong> and general software development.
+    <p class=lead>{{ page.description }}
 
     {% for year in talks_by_year %}
         <h3>{{ year.name }}</h3>
@@ -48,8 +49,11 @@ twitter:
 
   <aside>
     {% for photo in page.photos %}
+      {% assign image_path = "assets/images/talks/" | append: photo['src'] %}
       <figure>
-        <img src="assets/images/talks/{{ photo['src'] }}" alt="{{ photo['alt'] }}">
+        <a data-fslightbox href="{{ image_path }}">
+          <img src="{{ image_path }}" alt="{{ photo['alt'] }}">
+        </a>
         <figcaption>{{ photo['alt'] }} • Credits&nbsp;{{ twitter | replace: 'nickname', photo['author'] }}</figcaption>
       </figure>
     {% endfor %}

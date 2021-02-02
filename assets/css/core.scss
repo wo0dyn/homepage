@@ -181,14 +181,14 @@ main {
       }
     }
 
-  article {
-    width: 67%;
-  }
-
   img.thumbnail {
     object-fit: cover;
     width: 200px;
     height: 200px;
+  }
+
+  img.track {
+    width: 67%;
   }
 
   .jumbotron {

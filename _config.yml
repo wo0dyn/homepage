@@ -2,10 +2,23 @@ safe: true
 permalink: /posts/:categories/:year/:title:output_ext
 highlighter: rouge
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      description: >
+        Hi, I'm Nicolas Dubois, I'm a Senior Python/UI Developer,
+        guitar player, father of two, and this is homepage
+
+
 exclude:
+  - assets/js/LICENSE
+  - assets/js/package.json
+  - assets/js/README.md
   - CNAME
-  - README.rst
   - homepage.sublime-project
+  - README.rst
 
 sass:
   style: compressed

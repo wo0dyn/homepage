@@ -11,7 +11,6 @@ defaults:
         Hi, I'm Nicolas Dubois, I'm a Senior Python/UI Developer,
         guitar player, father of two, and this is homepage
 
-
 exclude:
   - assets/js/LICENSE
   - assets/js/package.json
@@ -25,4 +24,9 @@ sass:
 
 collections:
   talks:
-    output: true
+    output: false
+
+url: https://wo0dyn.me
+
+plugins:
+  - jekyll-sitemap

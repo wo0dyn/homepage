@@ -1,8 +1,8 @@
-{% assign my = site.data.people["me"] -%}
+{%- assign my = site.data.people["me"] %}
 
-{%- capture page_title %}{{ my.fullname }} • {{ page.title }}{% endcapture -%}
-{%- assign page_description = page.description  | strip_html | strip -%}
-{%- assign page_image_url = page.twitter.image|absolute_url|default: my.gravatar -%}
+{%- capture page_title %}{{ my.fullname }} • {{ page.title }}{% endcapture %}
+{%- assign page_description = page.description  | strip_html | strip %}
+{%- assign page_image_url = page.twitter.image|absolute_url|default: my.gravatar %}
 {%- assign page_url = page.url | absolute_url -%}
 
 <!doctype html>

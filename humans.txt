@@ -5,7 +5,7 @@ permalink: /humans.txt
 # The humans responsible & technology colophon
 
 /* TEAM */
-    {% assign my = site.data.people["me"] %}
+    {% assign my = site.data.me %}
     {{ my.title }}: {{ my.fullname }}
     Contact: {{ my.email }}
     Twitter: @{{ my.nickname }}

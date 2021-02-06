@@ -1,4 +1,4 @@
-{%- assign my = site.data.people["me"] %}
+{%- assign my = site.data.me %}
 
 {%- capture page_title %}{{ my.fullname }} • {{ page.title }}{% endcapture %}
 {%- assign page_description = page.description  | strip_html | strip %}
@@ -26,8 +26,8 @@
 <link rel="author" href="{% link humans.txt %}" type="text/plain">
 <link rel="canonical" href="{{ site.url }}">
 <link rel="shortcut icon" href="{{ my.gravatar | append: "?s=16" }}" type="image/png">
-<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lora:400,700|Ubuntu+Mono" type="text/css">
-<link rel="stylesheet" href="/assets/css/core.css" type="text/css">
+<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lora:400,700|Ubuntu+Mono">
+<link rel="stylesheet" href="/assets/css/default.css?ts={{ site.time | date: '%s' }}">
 
 <script src="assets/js/fslightbox.min.js" defer></script>
 
@@ -35,11 +35,16 @@
   <h1><a href="{% link home.html %}">{{ my.nickname }}.me</a></h1>
   <nav>
     <ul>
-      <li{% if page.name contains 'home' %} class="active"{% endif %}><a href="{% link home.html %}">Home</a>
-      <li{% if page.name contains 'talks' %} class="active"{% endif %}><a href="{% link talks.html %}">Talks</a>
-      <li{% if page.name contains 'music' %} class="active"{% endif %}><a href="{% link music.html %}">Music</a>
-      <li{% if page.name contains 'travel' %} class="active"{% endif %}><a href="{% link travel.html %}">Travel</a>
-      <li{% if page.name contains 'about' %} class="active"{% endif %}><a href="{% link about.html %}">About</a>
+      <li{% if page.name contains 'home' %} class=active{% endif -%}
+        ><a href="{% link home.html %}">Home</a>
+      <li{% if page.name contains 'talks' %} class=active{% endif -%}
+        ><a href="{% link talks.html %}">Talks</a>
+      <li{% if page.name contains 'music' %} class=active{% endif -%}
+        ><a href="{% link music.html %}">Music</a>
+      <li{% if page.name contains 'travel' %} class=active{% endif -%}
+        ><a href="{% link travel.html %}">Travel</a>
+      <li{% if page.name contains 'about' %} class=active{% endif -%}
+        ><a href="{% link about.html %}">About</a>
     </ul>
   </nav>
 </header>
@@ -50,7 +55,7 @@
 
 <footer>
   <p>© 2002-{{ 'now' | date:"%Y" }} {{ my.fullname }} • {{ my.nickname }} on
-  <a href="https://github.com/wo0dyn">GitHub</a>,
-  <a href="https://linkedin.com/in/wo0dyn">LinkedIn</a> and
-  <a href="https://twitter.com/wo0dyn">Twitter</a>.
+  <a href="{{ my.social.github.url }}">{{ my.social.github.name }}</a>,
+  <a href="{{ my.social.linkedin.url }}">{{ my.social.linkedin.name }}</a> and
+  <a href="{{ my.social.twitter.url }}">{{ my.social.twitter.name }}</a>.
 </footer>

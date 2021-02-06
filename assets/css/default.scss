@@ -1,12 +1,17 @@
 ---
-
+colors:
+  text: 616263
+  background: f7f8f9
+fonts:
+  serif: Lora
+  sans-serif: Dosis
 ---
 
 html {
   padding-bottom: 80px;
   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-      box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
@@ -14,13 +19,13 @@ html {
 *:after {
   -webkit-box-sizing: inherit;
      -moz-box-sizing: inherit;
-      box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
-  background-color: #f7f8f9;
-  color: #616263;
-  font-family: 'Lora', serif;
+  background-color: #{{ page.colors.background }};
+  color: #{{ page.colors.text }};
+  font-family: '{{ page.fonts.serif }}', serif;
   padding: 1em 4rem;
   position: relative;
   margin: 0;
@@ -28,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, nav {
-  font-family: 'Dosis', sans-serif;
+  font-family: '{{ page.fonts.sans-serif }}', sans-serif;
 }
 
 a {
@@ -91,7 +96,7 @@ header {
         }
 
         a:hover, &.active {
-          border-bottom: 1px solid #616263;
+          border-bottom: 1px solid #{{ page.colors.text }};
         }
       }
 
@@ -168,15 +173,15 @@ main {
       ul {
         li {
           time {
-          font-size: small;
+            font-size: small;
 
-          &:before {
-            content: "(";
+            &:before {
+              content: "(";
+            }
+            &:after {
+              content: ")";
+            }
           }
-          &:after {
-            content: ")";
-          }
-        }
         }
       }
     }

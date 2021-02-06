@@ -17,7 +17,9 @@ twitter:
       <h2>{{ track.title }}</h2>
       <a data-fslightbox=html5-youtube-videos
         href="https://www.youtube.com/watch?v={{ track.key }}">
-        <img class=track src="{{ "assets/images/music/" | append: track.key | append: '.jpg' }}"
+        <img class=track src="{{ "assets/images/music/"
+          | append: track.key
+          | append: '.jpg' }}"
           alt="{{ track.title }}">
       </a>
     </article>

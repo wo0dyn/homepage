@@ -19,44 +19,48 @@ twitter:
 ---
 
   {% assign twitter = "<a href='https://twitter.com/nickname'>@nickname</a>" %}
-  {% assign talks_by_year = site.talks | group_by_exp: "talk", "talk.date | date: '%Y'" | reverse %}
+  {% assign talks_by_year = site.talks
+    | group_by_exp: "talk", "talk.date | date: '%Y'"
+    | reverse %}
 
   <section>
     <h2>Talks</h2>
-    <p class=lead>{{ page.description }}
+    <p class=lead>{{ page.description | strip }}
 
-    {% for year in talks_by_year %}
-        <h3>{{ year.name }}</h3>
+    {%- for year in talks_by_year %}
+    <h3>{{ year.name }}</h3>
 
-        {% for talk in year.items %}
-          <article>
-            <h1>
-              {{ talk.title }}
-              {% if talk.original_title %}
-                <span>
-                  Original title: <em lang="{{ talk.lang }}">{{ talk.original_title }}</em>
-                </span>
-              {% endif %}
-            </h1>
-            Talk given on
-            <time datetime="{{ talk.date }}">{{ talk.date | date: "%a, %b %d" }}</time>
-            at {{ talk.conference }}, {{ talk.place }}.
-            {{ talk.excerpt | replace: "</p>", "" }}
-          </article>
-        {% endfor %}
-    {% endfor %}
+    {%- for talk in year.items %}
+    <article>
+      <h1>
+        {{ talk.title }}
+        {%- if talk.original_title %}
+        <span>
+          Original title: <em lang="{{ talk.lang }}">
+            {{- talk.original_title -}}
+          </em>
+        </span>
+        {%- endif %}
+      </h1>
+      <p>Talk given on <time datetime="{{ talk.date }}">
+        {{- talk.date | date: "%a, %b %d" -}}
+      </time> at {{ talk.conference }}, {{ talk.place }}.
+      {{ talk.excerpt | replace: "</p>", "" | strip }}
+    </article>
+    {%- endfor %}
+    {%- endfor %}
   </section>
 
   <aside>
-    {% for photo in page.photos %}
-      {% assign image_path = "assets/images/talks/" | append: photo['src'] %}
-      <figure>
-        <a data-fslightbox href="{{ image_path }}">
-          <img src="{{ image_path }}" alt="{{ photo['alt'] }}">
-        </a>
-        <figcaption>{{ photo['alt'] }} • Credits&nbsp;{{ twitter | replace: 'nickname', photo['author'] }}</figcaption>
-      </figure>
-    {% endfor %}
+    {%- for photo in page.photos %}
+    {%- assign image_path = "assets/images/talks/" | append: photo['src'] %}
+    <figure>
+      <a data-fslightbox href="{{ image_path }}">
+        <img src="{{ image_path }}" alt="{{ photo['alt'] }}">
+      </a>
+      <figcaption>{{ photo['alt'] }} • Credits&nbsp;{{ twitter | replace: 'nickname', photo['author'] }}</figcaption>
+    </figure>
+    {%- endfor %}
   </aside>
 
 

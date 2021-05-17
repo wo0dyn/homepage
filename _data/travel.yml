@@ -12,6 +12,7 @@ airports:
   - Marseille Provence Airport, France (MRS)
   - Metz–Nancy–Lorraine Airport, France (ETZ)
   - Miami International Airport, Florida, USA (MIA)
+  - Nantes Atlantique Airport, France (NTE)
   - Nice Côte d'Azur International Airport, France (NCE)
   - Oujda Angads Airport, Morocco (OUD)
   - Paris Orly Airport, France (ORY)
@@ -21,17 +22,11 @@ airports:
   - Václav Havel Airport Prague, Czechia (PRG)
 
 airlines:
-  - name: AIRFRANCE
-    href: https://www.airfrance.com
-  - name: Brussels Airlines
-    href: https://www.brusselsairlines.com
-  - name: easyJet
-    href: https://www.easyjet.com
-  - name: HOP!
-    href: https://www.hop.fr
-  - name: KLM
-    href: https://www.klm.com
-  - name: Ryanair
-    href: https://www.ryanair.com
-  - name: TAP Air Portugal
-    href: https://www.flytap.com
+  - AIRFRANCE
+  - Brussels Airlines
+  - easyJet
+  - HOP!
+  - KLM
+  - Ryanair
+  - TAP Air Portugal
+  - Transavia

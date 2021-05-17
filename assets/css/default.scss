@@ -222,6 +222,14 @@ main {
 
 details {
   cursor: pointer;
+
+  summary:after {
+    content: '.';
+  }
+
+  &[open] summary:after {
+    content: ':';
+  }
 }
 
 footer {

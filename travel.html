@@ -31,4 +31,13 @@ description: >
       <li>{{ airport }}
     {%- endfor %}
     </ul>
+
+    <details>
+      <summary>I've travelled with a few airlines</summary>
+      <ul>
+      {%- for airline in site.data.travel['airlines'] %}
+        <li>{{ airline }}
+      {%- endfor %}
+      </ul>
+    </details>
   </aside>

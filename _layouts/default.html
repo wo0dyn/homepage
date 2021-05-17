@@ -10,6 +10,7 @@
 <meta charset="utf-8">
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_description }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="twitter:card" content="{{ page.twitter.card | default: "summary" }}">
 <meta name="twitter:site" content="@{{ my.nickname }}">
@@ -29,7 +30,7 @@
 <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lora:400,700|Ubuntu+Mono">
 <link rel="stylesheet" href="/assets/css/default.css?ts={{ site.time | date: '%s' }}">
 
-<script src="assets/js/fslightbox.min.js" defer></script>
+<script src="/assets/js/fslightbox.min.js" defer></script>
 
 <header>
   <h1><a href="{% link home.html %}">{{ my.nickname }}.me</a></h1>

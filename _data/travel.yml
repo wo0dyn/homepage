@@ -1,16 +1,17 @@
 airports:
   - Amsterdam Airport Schiphol, Netherlands (AMS)
+  - Brive–Souillac Airport • Brive Airport Dordogne Valley, France (BVE)
   - Brussels Airport, Belgium (BRU)
   - Copenhagen Airport, Denmark (CPH)
   - Edinburgh Airport, Scotland, UK (EDI)
   - Faro Airport, Portugal (FAO)
-  - Geneva Airport, Switzerland (GVA)
-  - Heraklion International Airport, Greece (HER)
+  - Geneva Airport • Cointrin Airport, Switzerland (GVA)
+  - Heraklion Airport • Kazantzakis International Airport, Greece (HER)
   - Lille Airport, France (LIL)
   - Lisbon Portela Airport, Portugal (LIS)
+  - Lorraine Airport (Nancy/Metz), France (ETZ)
   - Lyon–Saint-Exupéry Airport, France (LYS)
   - Marseille Provence Airport, France (MRS)
-  - Metz–Nancy–Lorraine Airport, France (ETZ)
   - Miami International Airport, Florida, USA (MIA)
   - Nantes Atlantique Airport, France (NTE)
   - Nice Côte d'Azur International Airport, France (NCE)
@@ -23,6 +24,7 @@ airports:
 
 airlines:
   - AIRFRANCE
+  - Amelia (Regourd Aviation group)
   - Brussels Airlines
   - easyJet
   - HOP!

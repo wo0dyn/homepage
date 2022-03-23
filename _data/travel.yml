@@ -1,27 +1,27 @@
 airports:
-  - Amsterdam Airport Schiphol, Netherlands (AMS)
-  - Brive–Souillac Airport • Brive Airport Dordogne Valley, France (BVE)
-  - Brussels Airport, Belgium (BRU)
-  - Copenhagen Airport, Denmark (CPH)
-  - Edinburgh Airport, Scotland, UK (EDI)
-  - Faro Airport, Portugal (FAO)
-  - Geneva Airport • Cointrin Airport, Switzerland (GVA)
-  - Heraklion Airport • Kazantzakis International Airport, Greece (HER)
-  - Lille Airport, France (LIL)
-  - Lisbon Portela Airport, Portugal (LIS)
-  - Lorraine Airport (Nancy/Metz), France (ETZ)
-  - Lyon–Saint-Exupéry Airport, France (LYS)
-  - Marseille Provence Airport, France (MRS)
-  - Miami International Airport, Florida, USA (MIA)
-  - Nantes Atlantique Airport, France (NTE)
-  - Nice Côte d'Azur International Airport, France (NCE)
-  - Oujda Angads Airport, Morocco (OUD)
-  - Paris Orly Airport, France (ORY)
-  - Paris Roissy–Charles de Gaulle Airport, France (CDG)
-  - Rennes Bretagne Airport, France (RNS)
-  - Strasbourg Airport, France (SXB)
-  - Toulouse–Blagnac Airport, France (TLS)
-  - Václav Havel Airport Prague, Czechia (PRG)
+  - Amsterdam Airport Schiphol, Netherlands 🇳🇱 (AMS)
+  - Brive–Souillac Airport • Brive Airport Dordogne Valley, France 🇫🇷 (BVE)
+  - Brussels Airport, Belgium 🇧🇪 (BRU)
+  - Copenhagen Airport, Denmark 🇩🇰 (CPH)
+  - Edinburgh Airport, Scotland, UK 🇬🇧 (EDI)
+  - Faro Airport, Portugal 🇵🇹 (FAO)
+  - Geneva Airport • Cointrin Airport, Switzerland 🇨🇭 (GVA)
+  - Heraklion Airport • Kazantzakis International Airport, Greece 🇬🇷 (HER)
+  - Lille Airport, France 🇫🇷 (LIL)
+  - Lisbon Portela Airport, Portugal 🇵🇹 (LIS)
+  - Lorraine Airpo t (Nancy/Metz), France 🇫🇷 (ETZ)
+  - Lyon–Saint-Exupéry Airport, France 🇫🇷 (LYS)
+  - Marseille Provence Airport, France 🇫🇷 (MRS)
+  - Miami International Airport, Florida, USA 🇺🇸 (MIA)
+  - Nantes Atlantique Airport, France 🇫🇷 (NTE)
+  - Nice Côte d'Azur International Airport, France 🇫🇷 (NCE)
+  - Oujda Angads Airport, Morocco 🇲🇦 (OUD)
+  - Paris Orly Airport, France 🇫🇷 (ORY)
+  - Paris Roissy–Charles de Gaulle Airport, France 🇫🇷 (CDG)
+  - Rennes Bretagne Airport, France 🇫🇷 (RNS)
+  - Strasbourg Airport, France 🇫🇷 (SXB)
+  - Toulouse–Blagnac Airport, France 🇫🇷 (TLS)
+  - Václav Havel Airport Prague, Czechia 🇨🇿 (PRG)
 
 airlines:
   - AIRFRANCE
@@ -30,6 +30,7 @@ airlines:
   - easyJet
   - HOP!
   - KLM
+  - Mel Air Limited
   - Ryanair
   - TAP Air Portugal
   - Transavia

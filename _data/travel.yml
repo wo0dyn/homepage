@@ -1,36 +1,36 @@
 airports:
-  - Amsterdam Airport Schiphol, Netherlands 🇳🇱 (AMS)
-  - Brive–Souillac Airport • Brive Airport Dordogne Valley, France 🇫🇷 (BVE)
-  - Brussels Airport, Belgium 🇧🇪 (BRU)
-  - Copenhagen Airport, Denmark 🇩🇰 (CPH)
-  - Edinburgh Airport, Scotland, UK 🇬🇧 (EDI)
-  - Faro Airport, Portugal 🇵🇹 (FAO)
-  - Geneva Airport • Cointrin Airport, Switzerland 🇨🇭 (GVA)
-  - Heraklion Airport • Kazantzakis International Airport, Greece 🇬🇷 (HER)
-  - Lille Airport, France 🇫🇷 (LIL)
-  - Lisbon Portela Airport, Portugal 🇵🇹 (LIS)
-  - Lorraine Airpo t (Nancy/Metz), France 🇫🇷 (ETZ)
-  - Lyon–Saint-Exupéry Airport, France 🇫🇷 (LYS)
-  - Marseille Provence Airport, France 🇫🇷 (MRS)
-  - Miami International Airport, Florida, USA 🇺🇸 (MIA)
-  - Nantes Atlantique Airport, France 🇫🇷 (NTE)
-  - Nice Côte d'Azur International Airport, France 🇫🇷 (NCE)
-  - Oujda Angads Airport, Morocco 🇲🇦 (OUD)
-  - Paris Orly Airport, France 🇫🇷 (ORY)
-  - Paris Roissy–Charles de Gaulle Airport, France 🇫🇷 (CDG)
-  - Rennes Bretagne Airport, France 🇫🇷 (RNS)
-  - Strasbourg Airport, France 🇫🇷 (SXB)
-  - Toulouse–Blagnac Airport, France 🇫🇷 (TLS)
-  - Václav Havel Airport Prague, Czechia 🇨🇿 (PRG)
+  - Amsterdam Airport Schiphol (AMS), 🇳🇱 Netherlands
+  - Brive–Souillac Airport • Brive Airport Dordogne Valley (BVE), 🇫🇷 France
+  - Brussels Airport (BRU), 🇧🇪 Belgium
+  - Copenhagen Airport (CPH), 🇩🇰 Denmark
+  - Edinburgh Airport (EDI), Scotland, 🇬🇧 UK
+  - Faro Airport (FAO), 🇵🇹 Portugal
+  - Geneva Airport • Cointrin Airport (GVA), 🇨🇭 Switzerland
+  - Heraklion Airport • N. Kazantzakis International Airport (HER), 🇬🇷 Greece
+  - Lille Airport (LIL), 🇫🇷 France
+  - Lisbon Portela Airport (LIS), 🇵🇹 Portugal
+  - Lyon–Saint-Exupéry Airport (LYS), 🇫🇷 France
+  - Marseille Provence Airport (MRS), 🇫🇷 France
+  - Miami International Airport (MIA), Florida, 🇺🇸 USA
+  - Nancy/Metz-Lorraine Airport (ETZ), 🇫🇷 France
+  - Nantes Atlantique Airport (NTE), 🇫🇷 France
+  - Nice Côte d'Azur International Airport (NCE), 🇫🇷 France
+  - Oujda Angads Airport (OUD), 🇲🇦 Morocco
+  - Paris Orly Airport (ORY), 🇫🇷 France
+  - Paris Roissy–Charles de Gaulle Airport (CDG), 🇫🇷 France
+  - Rennes Bretagne Airport (RNS), 🇫🇷 France
+  - Strasbourg Airport (SXB), 🇫🇷 France
+  - Toulouse–Blagnac Airport (TLS), 🇫🇷 France
+  - Václav Havel Airport Prague (PRG), 🇨🇿 Czechia
 
 airlines:
-  - AIRFRANCE
-  - Amelia (Regourd Aviation group)
-  - Brussels Airlines
-  - easyJet
-  - HOP!
-  - KLM
-  - Mel Air Limited
-  - Ryanair
-  - TAP Air Portugal
-  - Transavia
+  - Air France (AFR/AF)
+  - Amelia International (AEH/NL)
+  - Brussels Airlines (BEL/SN)
+  - easyJet (EZY/U2)
+  - HOP! (HOP/A5)
+  - KLM Royal Dutch Airlines (KLM/KL)
+  - Mel Air Limited (MDO/5M)
+  - Ryanair (RYR/FR)
+  - TAP Air Portugal (TAP/TP)
+  - Transavia Airlines (TRA/HV)

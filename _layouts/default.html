@@ -27,7 +27,7 @@
 <link rel="author" href="{% link humans.txt %}" type="text/plain">
 <link rel="canonical" href="{{ site.url }}">
 <link rel="shortcut icon" href="{{ my.gravatar | append: "?s=16" }}" type="image/png">
-<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lora:400,700|Ubuntu+Mono">
+<link rel="stylesheet" href="{{ "https://fonts.googleapis.com/css?family=Dosis:400,700|Lora:400,700|Ubuntu+Mono" | uri_escape }}">
 <link rel="stylesheet" href="/assets/css/default.css?ts={{ site.time | date: '%s' }}">
 
 <script src="/assets/js/fslightbox.min.js" defer></script>

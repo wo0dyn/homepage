@@ -139,19 +139,15 @@ main {
       margin-left: 100px;
       margin-top: -3em;
 
-      h1 {
+      h4 {
         font-size: 1.4em;
+        margin: 0;
 
         span {
           display: block;
           font-size: small;
         }
       }
-
-      h2 {
-        font-size: 1.2em;
-      }
-
     }
 
     article + article {

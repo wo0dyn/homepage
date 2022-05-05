@@ -15,7 +15,7 @@ description: >
     {%- for image in site.static_files %}
     {%- if image.path contains 'images/travel' %}
       <a data-fslightbox href="{{ image.path }}">
-        <img src="{{ image.path }}" class=thumbnail>
+        <img src="{{ image.path }}" alt="{{ image.basename | replace: "-", " " | capitalize }}" class=thumbnail>
       </a>
     {%- endif %}
     {%- endfor %}

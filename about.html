@@ -24,14 +24,13 @@ archives:
        <strong>father</strong>&nbsp;of&nbsp;two.<br>
        I live in {{ my.location }}.
     <p>I work for a company called <a href="https://getalma.eu">Alma</a>.<br>
-
        I previously worked for a few companies such as 
        <a href="https://www.people-doc.com">PeopleDoc</a>/<a href="https://www.ukg.com"><abbr title="Ultimate Kronos Group">UKG</abbr></a>,
        <a href="https://www.oscaro.com">Oscaro</a>,
        <a href="https://www.villatech.fr" title="Formerly Discounteo.com">Villatech</a>/<a href="http://www.pulsat.fr/">Pulsat</a>.<br>
 
        I have also worked in the following science labs: <a href="http://www.loria.fr">Loria</a>,
-       <a href="http://www-irisa.univ-ubs.fr" title="Formerly Valoria">IRISA</a> and
+       <a href="https://www.irisa.fr" title="Formerly Valoria">IRISA</a> and
        <a href="http://www.liglab.fr" title="Formely Leibniz IMAG">LIG</a>.
     <p>→ You can find
        <a href="https://github.com/wo0dyn/resume" title="resume repository">my résumé on my GitHub account</a>
@@ -73,7 +72,7 @@ archives:
     <p>You can follow me on social media:
       <ul>
       {%- for medium in my.social %}
-        <li><a href="{{ medium[1].url }}">{{ medium[1].name }}</a>
+        <li><a href="{{ medium[1].url }}" data-social-medium={{ medium[0] }}>{{ medium[1].name }}</a>
       {%- endfor %}
       </ul>
 

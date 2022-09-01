@@ -20,8 +20,10 @@ twitter:
 
   {% assign twitter = "<a href='https://twitter.com/nickname'>@nickname</a>" %}
   {% assign talks_by_year = site.talks
-    | group_by_exp: "talk", "talk.date | date: '%Y'"
-    | reverse %}
+    | group_by_exp: "talk", "talk.date
+    | date: '%Y'"
+    | reverse
+  %}
 
   <section>
     <h2>Talks</h2>

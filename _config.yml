@@ -10,8 +10,8 @@ defaults:
     values:
       layout: default
       description: >
-        Hi, I'm Nicolas Dubois, I'm a Senior Python/UI Developer,
-        guitar player, father of two, and this is homepage
+        Hi, I'm Nicolas “wo0dyn” Dubois, I'm a Senior Software Engineer (Python/UI),
+        guitarist, father of two, and this is homepage
 
 plugins:
   - jekyll-sitemap

@@ -2,7 +2,7 @@ Wo0dyn's Homepage
 =================
 
 I'm wo0dyn, Sr Software Engineer (Python/UI), former student in Cognitive
-Sciences, guitar player and father of two.
+Sciences, guitarist and father of two.
 
 I code in **python** (w/ **Django** web framework).
 

@@ -129,7 +129,20 @@ main {
   &.music {
     article + article {
       clear: left;
-      margin-bottom: 3em;
+    }
+
+    article {
+      figure {
+        margin-inline-start: 0;
+        display: table;
+
+        figcaption {
+          display: table-caption;
+          caption-side: bottom;
+          font-size: smaller;
+          margin-top: 1em;
+        }
+      }
     }
   }
 

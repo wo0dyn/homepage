@@ -30,3 +30,4 @@ exclude:
   - CNAME
   - homepage.sublime-project
   - README.rst
+  - vendor/bundle

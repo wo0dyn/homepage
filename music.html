@@ -15,13 +15,18 @@ twitter:
     {%- for track in site.data.music %}
     <article>
       <h2>{{ track.title }}</h2>
-      <a data-fslightbox=html5-youtube-videos
-        href="https://www.youtube.com/watch?v={{ track.key }}">
-        <img class=track src="{{ "assets/images/music/"
-          | append: track.key
-          | append: '.jpg' }}"
-          alt="{{ track.title }}">
-      </a>
+      <figure class=track>
+        <a data-fslightbox=html5-youtube-videos
+          href="https://www.youtube.com/watch?v={{ track.key }}">
+          <img class=track src="{{ "assets/images/music/"
+            | append: track.key
+            | append: '.jpg' }}"
+            alt="{{ track.title }}">
+        </a>
+        <figcaption>
+          {{ track.description | strip }}
+        </figcaption>
+      </figure>
     </article>
     {%- endfor %}
   </section>
@@ -33,7 +38,7 @@ twitter:
       <a data-fslightbox href="{{ image.path }}">
         <img src="{{ image.path }}" class=music>
       </a>
-      <figcaption>Credits&nbsp;<a href="https://www.instagram.com/thrashyone/">@thrashyone</a></figcaption>
+      <figcaption>Credits <a href="https://www.instagram.com/thrashyone/">@thrashyone</a></figcaption>
     </figure>
   {%- endif %}
   {%- endfor %}

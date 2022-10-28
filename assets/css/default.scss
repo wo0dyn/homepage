@@ -134,11 +134,8 @@ main {
     article {
       figure {
         margin-inline-start: 0;
-        display: table;
 
         figcaption {
-          display: table-caption;
-          caption-side: bottom;
           font-size: smaller;
           margin-top: 1em;
         }
@@ -226,18 +223,6 @@ main {
         margin-top: 0;
       }
     }
-  }
-}
-
-details {
-  cursor: pointer;
-
-  summary:after {
-    content: '.';
-  }
-
-  &[open] summary:after {
-    content: ':';
   }
 }
 

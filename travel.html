@@ -23,22 +23,3 @@ twitter:
     {%- endfor %}
     </div>
   </section>
-
-  <aside>
-    <h3>✈️ Airports</h3>
-    <p>I've visited a few airports during my travels:
-    <ul>
-    {%- for airport in site.data.travel['airports'] %}
-      <li>{{ airport }}
-    {%- endfor %}
-    </ul>
-
-    <details>
-      <summary>I've travelled with a few airlines</summary>
-      <ul>
-      {%- for airline in site.data.travel['airlines'] %}
-        <li>{{ airline }}
-      {%- endfor %}
-      </ul>
-    </details>
-  </aside>

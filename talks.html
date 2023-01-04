@@ -44,7 +44,7 @@ twitter:
         </span>
         {%- endif %}
       </h4>
-      <p>Talk given on <time datetime="{{ talk.date | date: "%Y-%m-%d" }}">
+      <p>Talk given on <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">
         {{- talk.date | date: "%a, %b %d" -}}
       </time> at {{ talk.conference }}, {{ talk.place }}.
       {{ talk.excerpt | replace: "</p>", "" | strip }}

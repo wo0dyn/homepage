@@ -21,9 +21,14 @@ social:
   linkedin:
     name: LinkedIn
     url: https://linkedin.com/in/wo0dyn
+  mastodon:
+    name: Mastodon
+    url: https://mamot.fr/@wo0dyn
+    nickname: wo0dyn@mamot.fr
   twitter:
     name: Twitter
     url: https://twitter.com/wo0dyn
+    nickname: wo0dyn
   youtube:
     name: YouTube
     url: https://www.youtube.com/@wo0dyn

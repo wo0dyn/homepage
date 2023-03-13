@@ -9,7 +9,8 @@ permalink: humans.txt
     {% assign my = site.data.me %}
     {{ my.title }}: {{ my.fullname }}
     Contact: {{ my.email }}
-    Twitter: @{{ my.nickname }}
+    Twitter: @{{ my.social.twitter.nickname }}
+    Mastodon: @{{ my.social.mastodon.nickname }}
     From: {{ my.location }}
 
 

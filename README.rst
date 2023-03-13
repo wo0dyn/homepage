@@ -1,9 +1,0 @@
-Wo0dyn's Homepage
-=================
-
-I'm wo0dyn, Sr Software Engineer (Python/UI), former student in Cognitive
-Sciences, guitarist and father of two.
-
-I code in **python** (w/ **Django** web framework).
-
-Copyright © 2002-2022 Nicolas Dubois, **`@wo0dyn <https://github.com/wo0dyn>`_**.

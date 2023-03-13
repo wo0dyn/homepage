@@ -27,6 +27,21 @@ twitter:
           {{ track.description | strip }}
         </figcaption>
       </figure>
+      {%- for testimonial in track.testimonials %}
+      <figure>
+        <blockquote cite="{{ testimonial.url }}">
+          <p>{{ testimonial.quote }}
+        </blockquote>
+        <figcaption>
+          —{{ testimonial.author }},
+          <cite>
+            <a href="{{ testimonial.url }}">
+              {{ testimonial.type }} from {{ testimonial.date | date_to_long_string: "ordinal", "US" }}
+            </a>
+          </cite>
+        </figcaption>
+      </figure>
+      {%- endfor %}
     </article>
     {%- endfor %}
   </section>

@@ -72,7 +72,7 @@ archives:
     <p>You can follow me on social media:
       <ul>
       {%- for medium in my.social %}
-        <li><a href="{{ medium[1].url }}" data-social-medium={{ medium[0] }}>{{ medium[1].name }}</a>
+        <li><a rel="me" href="{{ medium[1].url }}" data-social-medium={{ medium[0] }}>{{ medium[1].name }}</a>
       {%- endfor %}
       </ul>
 

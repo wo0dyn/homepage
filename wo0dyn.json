@@ -1,0 +1,6 @@
+---
+layout: null
+permalink: wo0dyn.json
+---
+
+{{- site.data.me | jsonify -}}

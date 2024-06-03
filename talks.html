@@ -18,7 +18,7 @@ twitter:
   image: assets/images/talks/djangocong-2018.jpg
 ---
 
-  {% assign twitter = "<a href='https://twitter.com/nickname'>@nickname</a>" %}
+  {% assign twitter = "<a href='https://x.com/nickname'>@nickname</a>" %}
   {% assign talks_by_year = site.talks
     | group_by_exp: "talk", "talk.date
     | date: '%Y'"

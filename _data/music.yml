@@ -1,3 +1,13 @@
+- title: Bécane (Yamê)
+  description: >
+    Original song by Yamê.<br>
+    Arranged and performed by Nicolas “wo0dyn” Dubois.<br>
+    Recorded and filmed by Sébastien Bédé at “La cave sonore”.<br>
+    Edited by Guillaume “Thrashy” Dubois.
+  published_at: 2024-05-09
+  published_on: youtube
+  key: MTFSOqdiNoQ
+
 - title: Let It Be (The Beatles)
   description: >
     Original song co-written by John Lennon and Paul McCartney and
@@ -8,7 +18,6 @@
   published_at: 2022-10-21
   published_on: youtube
   key: iZI0HKDQeQM
-
 
 - title: I Try (Macy Gray/Ben Taylor)
   description: >
@@ -36,11 +45,11 @@
     A film by Guillaume "Thrashy" Dubois.<br>
     Photography: Grégory Tonon.
   testimonials:
-    - url: https://twitter.com/tetemusic/status/1126527646425333762
-      quote: « Gros respect <a href="https://twitter.com/wo0dyn">@wo0dyn</a> 🙏🏽 »
-      author: Tété Officiel (<a href="https://twitter.com/tetemusic">@tetemusic</a>)
+    - url: https://x.com/tetemusic/status/1126527646425333762
+      quote: « Gros respect <a href="https://x.com/wo0dyn">@wo0dyn</a> 🙏🏽 »
+      author: Tété Officiel (<a href="https://x.com/tetemusic">@tetemusic</a>)
       date: 2019-05-09
-      type: RT on Twitter
+      type: RT on X
   published_at: 2019-05-08
   published_on: youtube
   key: 1NO4N--isHA

@@ -11,7 +11,7 @@ defaults:
       layout: default
       description: >
         Hi, I'm Nicolas “wo0dyn” Dubois, I'm a Senior Software Engineer (Python/UI),
-        guitarist, father of two, and this is homepage
+        guitarist, father of two, and this is my homepage!
 
 plugins:
   - jekyll-sitemap

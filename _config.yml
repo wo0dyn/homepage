@@ -17,6 +17,7 @@ plugins:
   - jekyll-sitemap
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 collections:
@@ -28,6 +29,9 @@ exclude:
   - assets/js/package.json
   - assets/js/README.md
   - CNAME
+  - Gemfile
+  - Gemfile.lock
   - homepage.sublime-project
   - README.rst
+  - Taskfile.yml
   - vendor/bundle

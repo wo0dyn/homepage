@@ -1,0 +1,47 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    desc: "List all available tasks"
+    cmds:
+      - task --list-all
+    silent: true
+
+  install:
+    desc: "Install Ruby dependencies using Bundler"
+    cmds:
+      - bundle install --path vendor/bundle
+      - yarn add @picocss/pico
+      - mkdir -p _sass/pico
+      - cp -r node_modules/@picocss/pico/scss/* _sass/pico/
+
+  serve:
+    desc: "Start Jekyll development server"
+    cmds:
+      - bundle exec jekyll serve
+
+  dev:
+      desc: "Start development server with live reload and drafts"
+      cmds:
+        - bundle exec jekyll serve --livereload --drafts --incremental
+      deps: [install]
+
+  clean:
+    desc: "Clean Jekyll build artifacts"
+    cmds:
+      - bundle exec jekyll clean
+
+  cleanup:
+    desc: "Clean everything for fresh reinstall (removes vendor, _site, .bundle, Gemfile.lock)"
+    cmds:
+      - rm -rf node_modules/
+      - rm -rf vendor/
+      - rm -rf .bundle/
+      - rm -f Gemfile.lock
+      - echo "Cleanup complete! Run 'task install' to reinstall dependencies."
+    deps: [clean]

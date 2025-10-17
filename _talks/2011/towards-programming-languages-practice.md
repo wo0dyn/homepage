@@ -8,4 +8,4 @@ place: Toulouse, France
 lang: fr
 ---
 
-Practice for SudWeb conference with the full version of the talk.
+Rehearsal for SudWeb conference with the full original version of the talk.

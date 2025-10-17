@@ -1,10 +1,12 @@
-fullname: Nicolas Dubois
-nickname: wo0dyn
-title:    Senior Software Engineer (Python/UI)
-location: Brive-la-Gaillarde area, France
-email:    nicolas.c.dubois@gmail.com
-gravatar: https://secure.gravatar.com/avatar/51c17cde62e1bb52812ea5352723a5ed
-website: https://wo0dyn.me
+fullname:     Nicolas Dubois
+nickname:     wo0dyn
+short-title:  Sr Software Engineer
+title:        Senior Software Engineer (Python/UI)
+company:      Deepki
+location:     Brive-la-Gaillarde area, France
+email:        nicolas.c.dubois@gmail.com
+gravatar:     https://secure.gravatar.com/avatar/51c17cde62e1bb52812ea5352723a5ed
+website:      https://wo0dyn.me
 
 social:
   codepen:

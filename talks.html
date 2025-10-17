@@ -26,24 +26,23 @@ twitter:
   %}
 
   <section>
-    <h2>Talks</h2>
-    <p class=lead>{{ page.description | strip }}
+    <h1>Talks</h1>
+    <p>{{ page.description | strip }}
 
     {%- for year in talks_by_year %}
-    <h3>{{ year.name }}</h3>
+    <h2>{{ year.name }}</h2>
 
     {%- for talk in year.items %}
     <article>
-      <h4>
-        {{ talk.title }}
-        {%- if talk.original_title %}
-        <span>
-          Original title: <em lang="{{ talk.lang }}">
-            {{- talk.original_title -}}
-          </em>
-        </span>
-        {%- endif %}
-      </h4>
+      <hgroup>
+        <h3>{{ talk.title }}</h3>
+        <small>
+          <p>Original title:
+            <em lang="{{ talk.lang }}">
+              {{- talk.original_title -}}
+            </em>
+        </small>
+      </hgroup>
       <p>Talk given on <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">
         {{- talk.date | date: "%a, %b %d" -}}
       </time> at {{ talk.conference }}, {{ talk.place }}.
@@ -60,9 +59,9 @@ twitter:
       <a data-fslightbox href="{{ image_path }}">
         <img src="{{ image_path }}" alt="{{ photo['alt'] }}">
       </a>
-      <figcaption>{{ photo['alt'] }} • Credits&nbsp;{{ twitter | replace: 'nickname', photo['author'] }}</figcaption>
+      <figcaption>
+        {{ photo['alt'] }} • Credits&nbsp;{{ twitter | replace: 'nickname', photo['author'] }}
+      </figcaption>
     </figure>
     {%- endfor %}
   </aside>
-
-

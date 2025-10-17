@@ -11,6 +11,7 @@
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_description }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 
 <meta name="twitter:site" content="@{{ my.nickname }}">
 <meta name="twitter:creator" content="@{{ my.nickname }}">
@@ -25,6 +26,8 @@
 <meta property="og:description" content="{{ page_description }}">
 <meta property="og:image" content="{{ page_image_url }}">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="author" href="{% link humans.txt %}" type="text/plain">
 <link rel="alternate me" href="{% link about.json %}" type="application/json">
 <link rel="canonical" href="{{ site.url }}">
@@ -34,33 +37,42 @@
 
 <script src="/assets/js/fslightbox.min.js" defer></script>
 
-<header>
-  <h1><a href="{% link home.html %}">{{ my.nickname }}.me</a></h1>
+<header class="container">
   <nav>
     <ul>
-      <li{% if page.name contains 'home' %} class=active{% endif -%}
-        ><a href="{% link home.html %}">Home</a>
-      <li{% if page.name contains 'talks' %} class=active{% endif -%}
-        ><a href="{% link talks.html %}">Talks</a>
-      <li{% if page.name contains 'music' %} class=active{% endif -%}
-        ><a href="{% link music.html %}">Music</a>
-      <li{% if page.name contains 'travel' %} class=active{% endif -%}
-        ><a href="{% link travel.html %}">Travel</a>
-      <li{% if page.name contains 'about' %} class=active{% endif -%}
-        ><a href="{% link about.html %}">About</a>
+      <li><a href="{% link home.html %}" class="contrast">{{ my.nickname }}</a>
+    </ul>
+    <ul>
+      <li><a href="{% link home.html %}" class="contrast
+        {%- if page.name contains 'home' %} active" aria-current="page{% endif -%}
+        ">Home</a>
+      <li><a href="{% link talks.html %}" class="contrast
+        {%- if page.name contains 'talks' %} active" aria-current="page{% endif -%}
+        ">Talks</a>
+      <li><a href="{% link music.html %}" class="contrast
+        {%- if page.name contains 'music' %} active" aria-current="page{% endif -%}
+        ">Music</a>
+      <li><a href="{% link travel.html %}" class="contrast
+        {%- if page.name contains 'travel' %} active" aria-current="page{% endif -%}
+        ">Travel</a>
+      <li><a href="{% link about.html %}" class="contrast
+        {%- if page.name contains 'about' %} active" aria-current="page{% endif -%}
+        ">About</a>
     </ul>
   </nav>
 </header>
 
-<main class="{{ page.layout }} {{ page.title | slugify }}">
+<main class="container grid">
   {{ content | strip }}
 </main>
 
 <footer>
-  <p>© 2002-{{ 'now' | date:"%Y" }} {{ my.fullname }} • {{ my.nickname }} on
-  <a rel="me" href="{{ my.social.github.url }}">{{ my.social.github.name }}</a>,
-  <a rel="me" href="{{ my.social.linkedin.url }}">{{ my.social.linkedin.name }}</a> and
-  <a rel="me" href="{{ my.social.instagram.url }}">{{ my.social.instagram.name }}</a>.
+  <div class="container">
+    © 2002-{{ 'now' | date:"%Y" }} {{ my.fullname }} • {{ my.nickname }} on
+    <a rel="me" class="contrast" href="{{ my.social.github.url }}">{{ my.social.github.name }}</a>,
+    <a rel="me" class="contrast" href="{{ my.social.linkedin.url }}">{{ my.social.linkedin.name }}</a> and
+    <a rel="me" class="contrast" href="{{ my.social.instagram.url }}">{{ my.social.instagram.name }}</a>.
+  </div>
 </footer>
 
 <script type="application/ld+json">
@@ -83,7 +95,7 @@
   ],
   "worksFor": {
     "@type": "Corporation",
-    "name": "Almapay"
+    "name": "{{ my.company }}"
   }
 }
 </script>

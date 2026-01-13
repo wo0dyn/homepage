@@ -1,19 +1,6 @@
 ---
 title: About wo0dyn
 permalink: about.html
-archives:
-  - datetime: 2025-04-23T07:40:13Z
-    website: https://wo0dyn.me/
-  - datetime: 2018-08-27T15:44:13Z
-    website: https://nicolasdubois.com/
-  - datetime: 2016-10-21T15:02:07Z
-    website: https://nicolasdubois.com/
-  - datetime: 2009-11-28T14:52:21Z
-    website: http://nico.dubs-family.com:80/home
-  - datetime: 2006-11-23T02:25:22Z
-    website: http://duboisnicolas.free.fr/cv/personal.php
-  - datetime: 2002-02-14T11:54:46Z
-    website: http://duboisnicolas.free.fr:80/
 ---
 
   {% assign my = site.author %}
@@ -65,7 +52,7 @@ archives:
       the <a href="http://archive.org">Internet Archive</a>, here are some
       snapshots of my homepage through the years:
       <ul class="archives">
-        {%- for archive in page.archives -%}
+        {%- for archive in site.archives -%}
         {% assign ts = archive['datetime'] | date: "%Y%m%d%H%M%S" %}
         <li>
           <a href="http://web.archive.org/web/{{ ts }}/{{ archive['website'] }}">

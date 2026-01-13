@@ -1,0 +1,35 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | strip_html | strip }}",
+  "url": "{{ site.url }}/{{ page.permalink }}",
+  "author": {
+    "@id": "{{ site.url }}/#person"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {%- for talk in site.talks %}
+      {
+        "@type": "Event",
+        "name": "{{ talk.title }}",
+        "description": "{{ talk.excerpt | strip_html | strip }}",
+        "startDate": "{{ talk.date | date: '%Y-%m-%d' }}",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "{{ talk.conference }}",
+          "address": "{{ talk.place }}"
+        },
+        "performer": {
+          "@id": "{{ site.url }}/#person"
+        },
+        "inLanguage": "{{ talk.lang }}"
+      }{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  }
+}
+</script>

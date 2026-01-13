@@ -32,11 +32,18 @@
 
 <script src="/assets/js/fslightbox.min.js" defer></script>
 
-{%- if page.name == 'home.html' %}{% include jsonld/website.html %}{% endif %}
-{%- if page.name == 'about.html' %}{% include jsonld/profile.html %}{% endif %}
-{%- if page.name == 'talks.html' %}{% include jsonld/talks.html %}{% endif %}
-{%- if page.name == 'music.html' %}{% include jsonld/music.html %}{% endif %}
-{%- if page.name == 'travel.html' %}{% include jsonld/travel.html %}{% endif %}
+{%- capture jsonld %}
+  {%- case page.name %}
+    {%- when 'home.html' %}{% include jsonld/website.json %}
+    {%- when 'about.html' %}{% include jsonld/profile.json %}
+    {%- when 'talks.html' %}{% include jsonld/talks.json %}
+    {%- when 'music.html' %}{% include jsonld/music.json %}
+    {%- when 'travel.html' %}{% include jsonld/travel.json %}
+  {%- endcase %}
+{%- endcapture %}
+<script type="application/ld+json">
+{{ jsonld | normalize_whitespace }}
+</script>
 
 <header class="container">
   <nav>

@@ -32,6 +32,12 @@
 
 <script src="/assets/js/fslightbox.min.js" defer></script>
 
+{%- if page.name == 'home.html' %}{% include jsonld/website.html %}{% endif %}
+{%- if page.name == 'about.html' %}{% include jsonld/profile.html %}{% endif %}
+{%- if page.name == 'talks.html' %}{% include jsonld/talks.html %}{% endif %}
+{%- if page.name == 'music.html' %}{% include jsonld/music.html %}{% endif %}
+{%- if page.name == 'travel.html' %}{% include jsonld/travel.html %}{% endif %}
+
 <header class="container">
   <nav>
     <ul>
@@ -70,28 +76,3 @@
     <a rel="me" class="contrast" href="{{ my.social.youtube.url }}">{{ my.social.youtube.name }}</a>.
   </div>
 </footer>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Person",
-  "name": "{{ my.fullname }}",
-  "gender": "male",
-  "url": "{{ my.website }}",
-  "image": "{{ my.gravatar }}",
-  "sameAs": [
-    {%- for medium in my.social %}
-    "{{ medium[1].url }}"{% unless forloop.last %},{% endunless %}
-    {%- endfor %}
-  ],
-  "jobTitle": "{{ my.title }}",
-  "knowsLanguage": [
-    "fr",
-    "en"
-  ],
-  "worksFor": {
-    "@type": "Corporation",
-    "name": "{{ my.company }}"
-  }
-}
-</script>

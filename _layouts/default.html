@@ -1,4 +1,4 @@
-{%- assign my = site.data.me %}
+{%- assign my = site.author %}
 
 {%- capture page_title %}{{ my.fullname }} • {{ page.title }}{% endcapture %}
 {%- assign page_description = page.description | strip_html | strip %}

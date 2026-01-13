@@ -48,6 +48,20 @@ author:
       name: YouTube
       url: https://www.youtube.com/@wo0dyn
 
+archives:
+  - datetime: 2025-04-23T07:40:13Z
+    website: https://wo0dyn.me/
+  - datetime: 2018-08-27T15:44:13Z
+    website: https://nicolasdubois.com/
+  - datetime: 2016-10-21T15:02:07Z
+    website: https://nicolasdubois.com/
+  - datetime: 2009-11-28T14:52:21Z
+    website: http://nico.dubs-family.com:80/home
+  - datetime: 2006-11-23T02:25:22Z
+    website: http://duboisnicolas.free.fr/cv/personal.php
+  - datetime: 2002-02-14T11:54:46Z
+    website: http://duboisnicolas.free.fr:80/
+
 safe: true
 permalink: /posts/:categories/:year/:title:output_ext
 highlighter: rouge

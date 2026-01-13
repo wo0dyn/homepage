@@ -3,7 +3,8 @@
 {%- capture page_title %}{{ my.fullname }} • {{ page.title }}{% endcapture %}
 {%- assign page_description = page.description | strip_html | strip %}
 {%- assign page_image = page.og.image | absolute_url | default: my.gravatar %}
-{%- assign page_url = page.url | absolute_url -%}
+{%- assign page_url = page.url | absolute_url %}
+{%- assign date_created = site.archives | map: "datetime" | last -%}
 
 <!doctype html>
 <html lang="{{ page.lang | default: 'en-us' }}">
@@ -35,7 +36,7 @@
 {%- capture jsonld %}
   {%- case page.name %}
     {%- when 'home.html' %}{% include jsonld/website.json %}
-    {%- when 'about.html' %}{% include jsonld/profile.json %}
+    {%- when 'about.html' %}{% include jsonld/profile.json date_created=date_created %}
     {%- when 'talks.html' %}{% include jsonld/talks.json %}
     {%- when 'music.html' %}{% include jsonld/music.json %}
     {%- when 'travel.html' %}{% include jsonld/travel.json %}
@@ -76,7 +77,7 @@
 
 <footer>
   <div class="container">
-    © 2002-{{ 'now' | date:"%Y" }} {{ my.fullname }} • {{ my.nickname }} on
+    © {{ date_created | date: "%Y" }}-{{ 'today' | date: "%Y" }} {{ my.fullname }} • {{ my.nickname }} on
     <a rel="me" class="contrast" href="{{ my.social.github.url }}">{{ my.social.github.name }}</a>,
     <a rel="me" class="contrast" href="{{ my.social.instagram.url }}">{{ my.social.instagram.name }}</a>,
     <a rel="me" class="contrast" href="{{ my.social.linkedin.url }}">{{ my.social.linkedin.name }}</a> and

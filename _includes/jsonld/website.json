@@ -4,6 +4,7 @@
   "name": "{{ site.author.nickname }}",
   "url": "{{ site.url }}",
   "author": {
+    "@type": "Person",
     "@id": "{{ site.url }}/#person"
   }
 }

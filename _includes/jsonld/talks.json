@@ -5,6 +5,7 @@
   "description": "{{ page.description | strip_html | strip }}",
   "url": "{{ site.url }}/{{ page.permalink }}",
   "author": {
+    "@type": "Person",
     "@id": "{{ site.url }}/#person"
   },
   "mainEntity": {
@@ -12,7 +13,7 @@
     "itemListElement": [
       {%- for talk in site.talks %}
       {
-        "@type": "Event",
+        "@type": "EducationEvent",
         "name": "{{ talk.title }}",
         "description": "{{ talk.excerpt | strip_html | strip }}",
         "startDate": "{{ talk.date | date: '%Y-%m-%d' }}",
@@ -23,6 +24,7 @@
           "address": "{{ talk.place }}"
         },
         "performer": {
+          "@type": "Person",
           "@id": "{{ site.url }}/#person"
         },
         "inLanguage": "{{ talk.lang }}"

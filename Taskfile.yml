@@ -22,7 +22,7 @@ tasks:
       - bundle exec jekyll serve
     deps: [install]
 
-  check-deployment:
+  check-deploy:
     desc: "Check GitHub Pages deployment"
     cmds:
       - gh run watch $(gh run list --workflow=pages-build-deployment --limit 1 --json databaseId --jq '.[0].databaseId')

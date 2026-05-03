@@ -5,6 +5,7 @@
   "description": {{ page.description | strip_html | strip | jsonify }},
   "url": "{{ site.url }}/{{ page.permalink }}",
   "author": {
+    "@type": "Person",
     "@id": "{{ site.url }}/#person"
   },
   "mainEntity": {

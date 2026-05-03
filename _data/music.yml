@@ -1,25 +1,32 @@
-- title: Bécane (Yamê)
+- key: MTFSOqdiNoQ
+  title: Bécane (Yamê)
   description: >
     Original song by Yamê.<br>
     Arranged and performed by Nicolas “wo0dyn” Dubois.<br>
     Recorded and filmed by Sébastien Bédé at “La cave sonore”.<br>
     Edited by Guillaume “Thrashy” Dubois.
-  published_at: 2024-05-09
+  uploaded_at: 2024-05-09T10:50:04-07:00
+  published_at: 2024-05-09T10:50:04-07:00
   published_on: youtube
-  key: MTFSOqdiNoQ
+  music_by: Yamê
+  duration: PT2M43S
 
-- title: Let It Be (The Beatles)
+- key: iZI0HKDQeQM
+  title: Let It Be (The Beatles)
   description: >
     Original song co-written by John Lennon and Paul McCartney and
     performed by The Beatles.<br>
     This version arranged and performed by Nicolas “wo0dyn” Dubois,
     slightly inspired by Mateus Asato's cover.<br>
     Recorded, filmed and edited by Sébastien Bédé at “la cave sonore”.
-  published_at: 2022-10-21
+  uploaded_at: 2022-10-21T00:59:37-07:00
+  published_at: 2022-10-21T00:59:37-07:00
   published_on: youtube
-  key: iZI0HKDQeQM
+  music_by: John Lennon and Paul McCartney
+  duration: PT1M28S
 
-- title: I Try (Macy Gray/Ben Taylor)
+- key: GgaOsqMQEkE
+  title: I Try (Macy Gray/Ben Taylor)
   description: >
     Original song co-written and performed by Macy Gray.<br>
     This version arranged and performed by Nicolas “wo0dyn” Dubois,
@@ -34,11 +41,14 @@
       author: Tonewood-Amp (<a href="https://www.facebook.com/tonewoodamp">@tonewoodamp</a>)
       date: 2022-08-25
       type: Comment on Facebook
-  published_at: 2022-08-24
+  uploaded_at: 2022-08-24T03:28:26-07:00
+  published_at: 2022-08-24T03:28:26-07:00
   published_on: youtube
-  key: GgaOsqMQEkE
+  music_by: Macy Gray
+  duration: PT2M55S
 
-- title: À la faveur de l'automne (Tété)
+- key: 1NO4N--isHA
+  title: À la faveur de l'automne (Tété)
   description: >
     À la faveur de l'automne, composed by Tété, arranged and performed
     by Nicolas "wo0dyn" Dubois.<br>
@@ -50,9 +60,11 @@
       author: Tété Officiel (<a href="https://x.com/tetemusic">@tetemusic</a>)
       date: 2019-05-09
       type: RT on X
-  published_at: 2019-05-08
+  uploaded_at: 2019-05-08T02:17:58-07:00
+  published_at: 2019-05-08T02:17:58-07:00
   published_on: youtube
-  key: 1NO4N--isHA
+  music_by: Tété
+  duration: PT4M0S
 
 # This 4k+ view video has been deleted. 😠
 # - title: This Day Next Year, Outro (Karate cover)

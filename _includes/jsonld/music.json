@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "{{ page.title }}",
-  "description": "{{ page.description | strip_html | strip }}",
+  "description": {{ page.description | strip_html | strip | jsonify }},
   "url": "{{ site.url }}/{{ page.permalink }}",
   "author": {
     "@id": "{{ site.url }}/#person"
@@ -14,11 +14,14 @@
       {
         "@type": "VideoObject",
         "name": "{{ track.title }}",
-        "description": "{{ track.description | strip_html | strip }}",
-        "uploadDate": "{{ track.published_at | date: '%Y-%m-%d' }}",
+        "description": {{ track.description | strip_html | strip | jsonify }},
+        "uploadDate": "{{ track.uploaded_at | date_to_xmlschema }}",
+        "datePublished": "{{ track.published_at | date_to_xmlschema }}",
         "thumbnailUrl": "{{ site.url }}/assets/images/music/{{ track.key }}.jpg",
         "contentUrl": "https://www.youtube.com/watch?v={{ track.key }}",
         "embedUrl": "https://www.youtube.com/embed/{{ track.key }}",
+        "duration": "{{ track.duration }}",
+        "musicBy": "{{ track.music_by }}",
         "author": {
           "@id": "{{ site.url }}/#person"
         }

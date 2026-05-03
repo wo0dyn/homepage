@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
-  "dateCreated": "{{ include.date_created | date: '%Y-%m-%d' }}",
+  "dateCreated": "{{ include.date_created | date_to_xmlschema }}",
   "dateModified": "{{ site.time | date_to_xmlschema }}",
   "mainEntity": {
     "@type": "Person",

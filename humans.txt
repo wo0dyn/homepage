@@ -9,7 +9,6 @@ permalink: humans.txt
     {% assign my = site.author %}
     {{ my.title }}: {{ my.fullname }}
     Contact: {{ my.email }}
-    Mastodon: @{{ my.social.mastodon.nickname }}
     From: {{ my.location }}
 
 
